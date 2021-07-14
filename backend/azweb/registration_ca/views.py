@@ -59,7 +59,7 @@ def user_register(request):
                 
                
                 # redirect to home page:
-                return redirect('registration_ca:home')
+                return redirect('registration_ca:index')
 
    # No post data availabe, let's just show the page.
     else:
