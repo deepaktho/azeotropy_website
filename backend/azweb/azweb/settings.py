@@ -51,6 +51,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'deepakthorat900@gmail.com'
+EMAIL_HOST_PASSWORD = 'deePAK123'
+EMAIL_PORT = 587
+
 ROOT_URLCONF = 'azweb.urls'
 
 TEMPLATES = [

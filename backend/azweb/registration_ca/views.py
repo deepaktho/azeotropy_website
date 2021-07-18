@@ -2,8 +2,11 @@
 from django.contrib.auth.models import User
 from django.shortcuts import render,redirect
 from .forms import RegisterForm
-from django.contrib import messages
+#from django.contrib import messages
 from .models import Extendeduser
+from django.http import HttpResponse
+
+from django.core.mail import send_mail
 
 
 
@@ -53,13 +56,27 @@ def user_register(request):
                 extendeduser.user = user
                 extendeduser.save()
 
-                messages.success(request, "Registration successful." )
+                subject = 'Successfully registered for CA portal'
+                message = f'congratulations {extendeduser.first_name}{extendeduser.last_name} have successfully registered on CA portal'
+                from_email = 'deepakthorat900@gmail.com'
+                to_email = extendeduser.email
+
+                send_mail(
+                            subject,
+                            message,
+                            from_email,
+                            [to_email],
+                            fail_silently=False,
+                        )
+                extendeduser.save()
+                message = 'You have successfully registered to CA portal'                
+                return render(request, "index.html",{'message':message})
                
                 
                 
                
                 # redirect to home page:
-                return redirect('registration_ca:index')
+                #return redirect('registration_ca:index')
 
    # No post data availabe, let's just show the page.
     else:
@@ -68,6 +85,9 @@ def user_register(request):
     return render(request, template, {'form': form})
 
 
+
+            
+            
 
 
     
