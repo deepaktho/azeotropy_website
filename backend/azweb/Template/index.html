@@ -56,12 +56,14 @@
   </section>
 
   <!-- ======= Header ======= -->
-
+{% if message in message %}
   <div class="alert alert-dismissible alert-success">
     <strong>{{message}}<strong>
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
-  
+
+{%endif%}
+
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
