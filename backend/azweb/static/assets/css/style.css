@@ -576,7 +576,7 @@ section {
 }
 
 .why-us .box span {
-  display: block;
+  display: inline;
   font-size: 28px;
   font-weight: 700;
   color: #ed5b5b;
