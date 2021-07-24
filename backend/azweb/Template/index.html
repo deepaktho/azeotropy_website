@@ -18,7 +18,7 @@
   
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Vendor CSS Files -->
   <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
   <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -142,7 +142,7 @@
 
           <div class="col-lg-4" data-aos="fade-up">
             <div class="box">
-              <span>300+</span>
+              <div  ><span class="count">300+</span></div>
               <h4>College Ambassadors</h4>
               <p></p>
             </div>
@@ -150,7 +150,7 @@
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
             <div class="box">
-              <span>200+</span>
+              <div><span class="count">200+</span></div>
               <h4>Colleges</h4>
               <p></p>
             </div>
@@ -158,8 +158,8 @@
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="box">
-              <span>03</span>
-              <h4> Ad ad velit qui</h4>
+              <div><span class="count">11000+</span></div> 
+              <h4> Footfall</h4>
               <p></p>
             </div>
           </div>
@@ -211,7 +211,7 @@
         <div class="section-title">
           <span>Perks</span>
           <h2>perks</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+          <p>Why to become a Campus Ambassador</p>
         </div>
 
         <div class="row">
@@ -277,9 +277,9 @@
       <div class="container" data-aos="zoom-in">
 
         <div class="text-center">
-          <h3>Call To Action</h3>
+          <h3>Register Now</h3>
           <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="cta-btn" href="#">Call To Action</a>
+          <a class="cta-btn" href="register">Click here</a>
         </div>
 
       </div>
@@ -972,6 +972,18 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
+  <script>$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 8000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+</script>
   <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
   <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
   <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
