@@ -119,14 +119,11 @@
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
             <h3>About AZeotropy</h3>
             <p class="fst-italic">
-              AZeotropy is an interesting blend of various intriguing competitions, lecture series, panel discussions,
-              exhibitions, workshops, and many fun-with-learning events. In line with these intentions, AZeotropy has
-              been striving ever since its inception towards its mission with a promise of spanning the length and
-              breadth of Chemical Engineering! We are a non-profit organization aimed to bridge the gap between
-              students, industry, and academia, and promote it at a national level. We are excited to conduct all the
-              competitions and events through an online medium. AZeotropy gives you a chance to showcase your leadership
-              and organizational skills through our CAMPUS AMBASSADOR PROGRAM
-            </p>
+              AZeotropy is an interesting blend of various intriguing competitions, lecture series, panel discussions, exhibitions, workshops, and many fun-with-learning events.
+             <span id="dots"></span><span id="more">In line with these intentions, AZeotropy has been striving ever since its inception towards its mission with a promise of spanning the length and breadth of Chemical Engineering! We are a non-profit organization aimed to bridge the gap between students, industry, and academia, and promote it at a national level. We are excited to conduct all the competitions and events through an online medium.
+                AZeotropy gives you a chance to showcase your leadership and organizational skills through our CAMPUS AMBASSADOR PROGRAM.</span></p>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+<br> <br>
             <h3>About Campus Ambassador Program</h3>
             <p class="fst-italic">
 
@@ -138,7 +135,7 @@
 
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check-circle"></i>  Interpersonal skills.</li>
               <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
               <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
             </ul>
@@ -158,7 +155,7 @@
 
           <div class="col-lg-4" data-aos="fade-up">
             <div class="box">
-              <div><span class="count">300+</span></div>
+              <div><span class="count">300</span><span>+</span></div>
               <h4>College Ambassadors</h4>
               <p></p>
             </div>
@@ -166,7 +163,7 @@
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
             <div class="box">
-              <div><span class="count">200+</span></div>
+              <div><span class="count">200</span><span>+</span></div>
               <h4>Colleges</h4>
               <p></p>
             </div>
@@ -174,7 +171,7 @@
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="box">
-              <div><span class="count">11000+</span></div>
+              <div><span class="count">11000</span><span>+</span></div> 
               <h4> Footfall</h4>
               <p></p>
             </div>
@@ -233,19 +230,18 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Interpersonal skills</a></h4>
-              <p>Get ahead of the crowd by strengthening your communication and management skills.</p>
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4><a href="">Network</a></h4>
+              <p>Create a network among your peers that will help build your character, build confidence and gain a perspective </p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
             data-aos-delay="150">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><a href="">Network</a></h4>
-              <p>Create a network among your peers that will help build your character, build confidence and gain a
-                perspective</p>
+              <div class="icon"><i class="bx bxs-t-shirt"></i></div>
+              <h4><a href="">Free T-Shirts</a></h4>
+              <p>Top 10 Campus Ambassadors get free T-shirts as a souvenir to cherish the memories that will be made together.</p>
             </div>
           </div>
 
@@ -1108,6 +1104,51 @@
 
     <!-- Template Main JS File -->
     <script src="{% static 'assets/js/main.js' %}"></script>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script>$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+</script>
+<script>
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
+  </script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
 
 </body>
 
