@@ -739,6 +739,10 @@ section {
 
 }
 
+.carousel-indicators{
+  bottom: -80px;
+}
+
 .carousel_container .flip-card {
   display: inline-block; 
   width: 43%;
