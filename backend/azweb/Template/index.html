@@ -21,6 +21,7 @@
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Vendor CSS Files -->
   <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
   <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -44,7 +45,7 @@
 <body>
 
   <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-flex align-items-center">
+  <!-- <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
         <a href="https://azeotropyiitbblog.wordpress.com">AZeotropy's blog</a>
@@ -52,17 +53,16 @@
       </div>
       <div class="social-links d-none d-md-block">
         <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
-        <a href="https://www.facebook.com/AZeotropy/" class="facebook" target="_blank"><i
-            class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/iitbombay_azeotropy/?hl=en" class="instagram" target="_blank"><i
-            class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/azeotropy/?originalSubdomain=in" class="linkedin" target="_blank"><i
-            class="bi bi-linkedin"></i></i></a>
-        <a href="https://www.youtube.com/channel/UCuUhMNqBAYUplxgrhGkEGWQ/featured" class="youtube" target="_blank"><i
-            class="bi bi-youtube"></i></i></a>
-      </div>
-    </div>
-  </section>
+  <a href="https://www.facebook.com/AZeotropy/" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+  <a href="https://www.instagram.com/iitbombay_azeotropy/?hl=en" class="instagram" target="_blank"><i
+      class="bi bi-instagram"></i></a>
+  <a href="https://www.linkedin.com/company/azeotropy/?originalSubdomain=in" class="linkedin" target="_blank"><i
+      class="bi bi-linkedin"></i></i></a>
+  <a href="https://www.youtube.com/channel/UCuUhMNqBAYUplxgrhGkEGWQ/featured" class="youtube" target="_blank"><i
+      class="bi bi-youtube"></i></i></a>
+  </div>
+  </div>
+  </section> -->
 
   <!-- ======= Header ======= -->
   {% if message in message %}
@@ -119,11 +119,18 @@
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
             <h3>About AZeotropy</h3>
             <p class="fst-italic">
-              AZeotropy is an interesting blend of various intriguing competitions, lecture series, panel discussions, exhibitions, workshops, and many fun-with-learning events.
-             <span id="dots"></span><span id="more">In line with these intentions, AZeotropy has been striving ever since its inception towards its mission with a promise of spanning the length and breadth of Chemical Engineering! We are a non-profit organization aimed to bridge the gap between students, industry, and academia, and promote it at a national level. We are excited to conduct all the competitions and events through an online medium.
-                AZeotropy gives you a chance to showcase your leadership and organizational skills through our CAMPUS AMBASSADOR PROGRAM.</span></p>
-<button onclick="myFunction()" id="myBtn">Read more</button>
-<br> <br>
+              AZeotropy is an interesting blend of various intriguing competitions, lecture series, panel discussions,
+              exhibitions, workshops, and many fun-with-learning events.
+              <span id="dots"></span><span id="more">In line with these intentions, AZeotropy has been striving ever
+                since its inception towards its mission with a promise of spanning the length and breadth of Chemical
+                Engineering! We are a non-profit organization aimed to bridge the gap between students, industry, and
+                academia, and promote it at a national level. We are excited to conduct all the competitions and events
+                through an online medium.
+                AZeotropy gives you a chance to showcase your leadership and organizational skills through our CAMPUS
+                AMBASSADOR PROGRAM.</span>
+            </p>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+            <br> <br>
             <h3>About Campus Ambassador Program</h3>
             <p class="fst-italic">
 
@@ -135,7 +142,7 @@
 
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i>  Interpersonal skills.</li>
+              <li><i class="bi bi-check-circle"></i> Interpersonal skills.</li>
               <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
               <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
             </ul>
@@ -171,7 +178,7 @@
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="box">
-              <div><span class="count">11000</span><span>+</span></div> 
+              <div><span class="count">11000</span><span>+</span></div>
               <h4> Footfall</h4>
               <p></p>
             </div>
@@ -232,7 +239,8 @@
             <div class="icon-box">
               <div class="icon"><i class="bx bx-world"></i></div>
               <h4><a href="">Network</a></h4>
-              <p>Create a network among your peers that will help build your character, build confidence and gain a perspective </p>
+              <p>Create a network among your peers that will help build your character, build confidence and gain a
+                perspective </p>
             </div>
           </div>
 
@@ -241,7 +249,8 @@
             <div class="icon-box">
               <div class="icon"><i class="bx bxs-t-shirt"></i></div>
               <h4><a href="">Free T-Shirts</a></h4>
-              <p>Top 10 Campus Ambassadors get free T-shirts as a souvenir to cherish the memories that will be made together.</p>
+              <p>Top 10 Campus Ambassadors get free T-shirts as a souvenir to cherish the memories that will be made
+                together.</p>
             </div>
           </div>
 
@@ -296,7 +305,7 @@
       <div class="container" data-aos="zoom-in">
 
         <div class="text-center">
-          <h3>Register Now</h3>
+          <h3>Be You. Be Unstoppable. Be a AZeotropy Ambassador.</h3>
           <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
             laborum.</p>
@@ -314,152 +323,207 @@
         <h2>Testimonial</h2>
         <!-- <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p> -->
       </div>
-      <div id="demo" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="carousel-caption">
-              <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code, I don't know what
-                will.This was the very best explanation of frameworks for brginners that I've ever seen. </p> <img
-                src=" {% static 'assets/img/team/team-1.jpg' %} ">
-              <div id="image-caption">Nick Doe</div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-caption">
-              <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code, I don't know what
-                will.This was the very best explanation of frameworks for brginners that I've ever seen.</p> <img
-                src=" {% static 'assets/img/team/team-2.jpg' %}" class="img-fluid">
-              <div id="image-caption1">Cromption Greves</div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-caption">
-              <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code, I don't know what
-                will.This was the very best explanation of frameworks for brginners that I've ever seen.</p> <img
-                src=" {% static 'assets/img/team/team-3.jpg' %}" class="img-fluid">
-              <div id="image-caption1">Harry Mon</div>
-            </div>
-          </div>
+      <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
         </div>
-        <a class="carousel-control-prev" href="#demo" data-slide="prev"> <i class='bi bi-arrow-left'></i> </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next"> <i class='bi bi-arrow-right'></i> </a>
+        <div class="carousel_container">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div>
+                
+                <i class="fa fa-quote-left" ></i><p>We will recognize and appreciate all the effort that you will put in. One will be felicitated with the
+                  prestigious Ambassador of the year award for his/her exceptional work throughout the tenure.
+                </p>
+                <img src="{% static 'assets/img/team/anjali_sadaphule.jpg' %}" alt="">
+                <h3>Anjali</h3>
+                <h6>Rank 1</h6>
+              </div>
+              <div>
+                <p>We will recognize and appreciate all the effort that you will put in. One will be felicitated with the
+                  prestigious Ambassador of the year award for his/her exceptional work throughout the tenure.
+                </p>
+                <img src="{% static 'assets/img/team/pulkit_pandey.jpg' %}" alt="">
+                <h3>Pulkit</h3>
+                <h6>Rank 1</h6>
+              </div>
+              
+            </div>
+            <div class="carousel-item">
+              <div>
+                
+                <p>We will recognize and appreciate all the effort that you will put in. One will be felicitated with the
+                  prestigious Ambassador of the year award for his/her exceptional work throughout the tenure.
+                </p>
+                <img src="{% static 'assets/img/team/anjali_sadaphule.jpg' %}" alt="">
+                <h3>Anjali</h3>
+                <h6>Rank 1</h6>
+              </div>
+              <div>
+                <p>We will recognize and appreciate all the effort that you will put in. One will be felicitated with the
+                  prestigious Ambassador of the year award for his/her exceptional work throughout the tenure.
+                </p>
+                <img src="{% static 'assets/img/team/pulkit_pandey.jpg' %}" alt="">
+                <h3>Pulkit</h3>
+                <h6>Rank 1</h6>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div>
+                
+                <p>We will recognize and appreciate all the effort that you will put in. One will be felicitated with the
+                  prestigious Ambassador of the year award for his/her exceptional work throughout the tenure.
+                </p>
+                <img src="{% static 'assets/img/team/anjali_sadaphule.jpg' %}" alt="">
+                <h3>Anjali</h3>
+                <h6>Rank 1</h6>
+              </div>
+              <div>
+                <p>We will recognize and appreciate all the effort that you will put in. One will be felicitated with the
+                  prestigious Ambassador of the year award for his/her exceptional work throughout the tenure.
+                </p>
+                <img src="{% static 'assets/img/team/pulkit_pandey.jpg' %}" alt="">
+                <h3>Pulkit</h3>
+                <h6>Rank 1</h6>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-    </div>
-
-    <!-- ======= Portfolio Section ======= -->
+      <!-- ======= Portfolio Section ======= -->
 
 
-    <section class="duties" id="duties">
+      <section class="duties" id="duties">
 
-      <div class="section-title">
-        <span>Duties</span>
-        <h2>Duties</h2>
-        <!-- <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p> -->
-      </div>
-
-
-      <div class="duties_container">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <div class="icon"><img src="{% static 'assets/img/brigde.png' %}" alt="Avatar"></div>
-              <h1>Point of Contact</h1>
-            </div>
-            <div class="flip-card-back">
-              <h1>Point of Contact</h1>
-              <p>Bridge the gap between your college participants, authorities, and team AZeotropy to allow the exchange
-                of information</p>
-
-            </div>
-          </div>
-        </div>
-
-       
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <div class="icon"><img src="{% static 'assets/img/brigde.png' %}" alt="Avatar"></div>
-              <h1>Spreding Awareness</h1>
-            </div>
-            <div class="flip-card-back">
-              <h1>Spreding Awareness</h1>
-              <p>Create a network and use social media to share AZeotropy’s current activities.</p>
-
-            </div>
-          </div>
+        <div class="section-title">
+          <span>Duties</span>
+          <h2>Duties</h2>
+          <!-- <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p> -->
         </div>
 
 
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <div class="icon"><img src="{% static 'assets/img/brigde.png' %}" alt="Avatar"></div>
-              <h1>Bring Participation</h1>
-            </div>
-            <div class="flip-card-back">
-              <h1>Bring Participation</h1>
-              <p>Bring in your college's involvement in various online AZeotropy events and competitions. The higher the number of participation from your college, the more benefits you will receive.</p>
+        <div class="duties_container">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="icon"><img src="{% static 'assets/img/brigde.png' %}" alt="Avatar"></div>
+                <h1>Point of Contact</h1>
+              </div>
+              <div class="flip-card-back">
+                <h1>Point of Contact</h1>
+                <p>Bridge the gap between your college participants, authorities, and team AZeotropy to allow the
+                  exchange
+                  of information</p>
 
+              </div>
+            </div>
+          </div>
+
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="icon"><img src="{% static 'assets/img/brigde.png' %}" alt="Avatar"></div>
+                <h1>Spreding Awareness</h1>
+              </div>
+              <div class="flip-card-back">
+                <h1>Spreding Awareness</h1>
+                <p>Create a network and use social media to share AZeotropy’s current activities.</p>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="icon"><img src="{% static 'assets/img/brigde.png' %}" alt="Avatar"></div>
+                <h1>Bring Participation</h1>
+              </div>
+              <div class="flip-card-back">
+                <h1>Bring Participation</h1>
+                <p>Bring in your college's involvement in various online AZeotropy events and competitions. The higher
+                  the number of participation from your college, the more benefits you will receive.</p>
+
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+
+        <div class="duties_container">
+
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="icon"><img src="{% static 'assets/img/brigde.png' %}" alt="Avatar"></div>
+                <h1>Publicize AZeotropy</h1>
+              </div>
+              <div class="flip-card-back">
+                <h1>Publicize AZeotropy</h1>
+                <p>Use creative internet tools and social media to spread the word about AZeotropy and its latest
+                  activitiesin your universities.</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="icon"><img src="{% static 'assets/img/brigde.png' %}" alt="Avatar"></div>
+                <h1>Chem-O-Philia</h1>
+              </div>
+              <div class="flip-card-back">
+                <h1>Chem-O-Philia</h1>
+                <p>Work with the AZeotropy core team to organise online Chem-O-Philia competitions at your universities.
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="icon"><img src="{% static 'assets/img/brigde.png' %}" alt="Avatar"></div>
+                <h1>Familiarize Others</h1>
+              </div>
+              <div class="flip-card-back">
+                <h1>Familiarize Others</h1>
+                <p>Familiarize participants from your college with the online environments in which they will be working
+                  and resolve any technical issues they may have.</p>
+
+              </div>
             </div>
           </div>
 
         </div>
 
 
-
-      </div>
-
-
-
-      <div class="duties_container">
-        
-
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <div class="icon"><img src="{% static 'assets/img/brigde.png' %}" alt="Avatar"></div>
-              <h1>Publicize AZeotropy</h1>
-            </div>
-            <div class="flip-card-back">
-              <h1>Publicize AZeotropy</h1>
-              <p>Use creative internet tools and social media to spread the word about AZeotropy and its latest activitiesin your universities.</p>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <div class="icon"><img src="{% static 'assets/img/brigde.png' %}" alt="Avatar"></div>
-              <h1>Chem-O-Philia</h1>
-            </div>
-            <div class="flip-card-back">
-              <h1>Chem-O-Philia</h1>
-              <p>Work with the AZeotropy core team to organise online Chem-O-Philia competitions at your universities.</p>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <div class="icon"><img src="{% static 'assets/img/brigde.png' %}" alt="Avatar"></div>
-              <h1>Familiarize Others</h1>
-            </div>
-            <div class="flip-card-back">
-              <h1>Familiarize Others</h1>
-              <p>Familiarize participants from your college with the online environments in which they will be working and resolve any technical issues they may have.</p>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-
-      <!-- <div class="flip-card">
+        <!-- <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <div class="icon"><img src="{% static 'assets/img/brigde.png' %}" alt="Avatar"></div>
@@ -529,8 +593,8 @@
         </div>
       </div> -->
 
-      </div>
-      <!-- <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
+    </div>
+    <!-- <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
             <div class="icon-box icon-box-pink">
               <div class="icon"><img src="{% static 'assets/img/bridging.png' %}", alt=""></div>
                  <h4 class="title">Point of Contact</h4>
@@ -1073,7 +1137,7 @@
         class="bi bi-arrow-up-short"></i></a>
     <div id="preloader"></div>
 
-    <!-- Vendor JS Files -->
+    <!-- Vendor JS Files
     <script>$('.count').each(function () {
         $(this).prop('Counter', 0).animate({
           Counter: $(this).text()
@@ -1101,54 +1165,60 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"></script>
+ -->
+    <!-- Template Main JS File -->
+    <!-- <script src="{% static 'assets/js/main.js' %}"></script>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div> -->
+
+    <!-- Vendor JS Files -->
+    <script>$('.count').each(function () {
+        $(this).prop('Counter', 0).animate({
+          Counter: $(this).text()
+        }, {
+          duration: 8000,
+          easing: 'swing',
+          step: function (now) {
+            $(this).text(Math.ceil(now));
+          }
+        });
+      });
+    </script>
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+    <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
 
     <!-- Template Main JS File -->
     <script src="{% static 'assets/js/main.js' %}"></script>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script>$('.count').each(function () {
-    $(this).prop('Counter',0).animate({
-        Counter: $(this).text()
-    }, {
-        duration: 4000,
-        easing: 'swing',
-        step: function (now) {
-            $(this).text(Math.ceil(now));
-        }
-    });
-});
-</script>
-<script>
-  function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more"; 
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less"; 
-      moreText.style.display = "inline";
-    }
-  }
-  </script>
-  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
-  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
-  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
-  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
-  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-  <!-- Template Main JS File -->
-  <script src="{% static 'assets/js/main.js' %}"></script>
 
 </body>
 
