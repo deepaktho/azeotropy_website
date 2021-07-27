@@ -19,12 +19,12 @@
                             <p class="bg-danger p-d ml-b">{{ error_message }}</p>
                         {% endif %}
 
-                        <div class="form-group clearfix">
+                        <!-- <div class="form-group clearfix">
                             <label for="{{ form.username.id_for_label }}" class="col-md-4 control-label text-right">Username<span class="text-red">*</span>:</label>
                             <div class="col-md-6">
                                 {{ form.username }}
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="form-group clearfix">
                             <label for="{{ form.first_name.id_for_label }}" class="col-md-4 control-label text-right">First Name<span class="text-red">*</span>:</label>
@@ -57,32 +57,32 @@
                             </div>
                         </div>
                         <div class="form-group clearfix">
-                            <label for="{{ form.phone_number.id_for_label }}" class="col-md-4 control-label text-right">Alternate Phone Number:</label>
+                            <label for="{{ form.alternate_phone_number.id_for_label }}" class="col-md-4 control-label text-right">Alternate Phone Number:</label>
                             <div class="col-md-6">
                                 {{ form.alternate_phone_number }}
                                 
                             </div>
                         </div>
                         <div class="form-group clearfix">
-                            <label for="{{ form.phone_number.id_for_label }}" class="col-md-4 control-label text-right">College/University<span class="text-red">*</span>:</label>
+                            <label for="{{ form.college.id_for_label }}" class="col-md-4 control-label text-right">College/University<span class="text-red">*</span>:</label>
                             <div class="col-md-6">
                                 {{ form.college }}
                             </div>
                         </div>
                         <div class="form-group clearfix">
-                            <label for="{{ form.phone_number.id_for_label }}" class="col-md-4 control-label text-right">Current year of study<span class="text-red">*</span>:</label>
+                            <label for="{{ form.current_year.id_for_label }}" class="col-md-4 control-label text-right">Current year of study<span class="text-red">*</span>:</label>
                             <div class="col-md-6">
                                 {{ form.current_year }}
                             </div>
                         </div>
                         <div class="form-group clearfix">
-                            <label for="{{ form.phone_number.id_for_label }}" class="col-md-4 control-label text-right">Permanent address<span class="text-red">*</span>:</label>
+                            <label for="{{ form.permanent_address.id_for_label }}" class="col-md-4 control-label text-right">Permanent address<span class="text-red">*</span>:</label>
                             <div class="col-md-6">
                                 {{ form.permanent_address }}
                             </div>
                         </div>
                         <div class="form-group clearfix">
-                            <label for="{{ form.phone_number.id_for_label }}" class="col-md-4 control-label text-right">State<span class="text-red">*</span>:</label>
+                            <label for="{{ form.state.id_for_label }}" class="col-md-4 control-label text-right">State<span class="text-red">*</span>:</label>
                             <div class="col-md-6">
                                 {{ form.state }}
                             </div>
