@@ -51,6 +51,7 @@ def user_register(request):
                 extendeduser.permanent_address = form.cleaned_data['permanent_address']
                 extendeduser.state = form.cleaned_data['state']
                 extendeduser.email = form.cleaned_data['email']
+                extendeduser.pincode = form.cleaned_data['pincode']
                 # extendeduser.user = user
                 extendeduser.save()
 

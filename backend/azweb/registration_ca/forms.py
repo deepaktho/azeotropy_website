@@ -12,6 +12,7 @@ class RegisterForm(forms.Form):
     current_year = forms.CharField(widget=forms.NumberInput(attrs={'class':'form-control'}),)
     permanent_address = forms.CharField(widget=forms.Textarea(attrs={'class':'form-control', 'rows':3}))
     state = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control'}))
+    pincode = forms.CharField(widget=forms.NumberInput(attrs={'class':'form-control'}), required=True )
 
 
 

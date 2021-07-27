@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        form{
+            margin-top: 10%;
+            margin-bottom: 10%;
+
+        }
+        .text-red{
+            color: red;
+        }
+
+        
+    </style>
 </head>
 <body>
     <div class="container">
@@ -28,13 +40,13 @@
 
                         <div class="form-group clearfix">
                             <label for="{{ form.first_name.id_for_label }}" class="col-md-4 control-label text-right">First Name<span class="text-red">*</span>:</label>
-                            <div class="col-md-6">
+                            <div class="col-md-6" >
                                 {{ form.first_name }}
                             </div>
                         </div>
                         <div class="form-group clearfix">
                             <label for="{{ form.last_name.id_for_label }}" class="col-md-4 control-label text-right">Last Name<span class="text-red">*</span>:</label>
-                            <div class="col-md-6">
+                            <div class="col-md-6" >
                                 {{ form.last_name }}
                             </div>
                         </div>
@@ -79,6 +91,12 @@
                             <label for="{{ form.permanent_address.id_for_label }}" class="col-md-4 control-label text-right">Permanent address<span class="text-red">*</span>:</label>
                             <div class="col-md-6">
                                 {{ form.permanent_address }}
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label for="{{ form.current_year.id_for_label }}" class="col-md-4 control-label text-right">Pincode<span class="text-red">*</span>:</label>
+                            <div class="col-md-6">
+                                {{ form.current_year }}
                             </div>
                         </div>
                         <div class="form-group clearfix">

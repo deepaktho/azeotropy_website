@@ -13,6 +13,7 @@ class Extendeduser(models.Model):
     permanent_address = models.TextField()
     state  = models.CharField(max_length=100)
     email = models.EmailField()
+    pincode = models.IntegerField(null=True)
     # user = models.OneToOneField(User, on_delete= models.CASCADE)
 
 

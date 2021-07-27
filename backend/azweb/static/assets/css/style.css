@@ -13,6 +13,13 @@ body {
   color: #444444;
 }
 
+.alert {
+  display: flex;
+  justify-content: center;
+  margin:0;
+  padding-top: 1%;
+}
+
 a {
   color: #cc1616;
   text-decoration: none;
