@@ -13,6 +13,13 @@ body {
   color: #444444;
 }
 
+.alert {
+  display: flex;
+  justify-content: center;
+  margin:0;
+  padding-top: 1%;
+}
+
 a {
   color: #ff7f71;
   text-decoration: none;
@@ -638,6 +645,10 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services .section-title{
+  /* margin-top: 60px; */
+}
+
 .services .icon-box {
   text-align: center;
   padding: 80px 20px;
@@ -714,6 +725,9 @@ section {
 }
 
 /* testimonial */
+
+
+
 .carousel_container{
   display: flex;
   /* border: 2px red solid; */
@@ -732,6 +746,13 @@ section {
   
 }
 
+.carousel_container .flip-card-back{
+
+}
+
+
+
+
 .carousel_container .carousel-item  img {
   width: 20%;
   border-radius: 100%;
@@ -740,7 +761,21 @@ section {
 }
 
 .carousel-indicators{
-  bottom: -80px;
+  margin: 0 23% -2em 20%;
+}
+
+.carousel_container .flip-card {
+  display: inline-block; 
+  width: 43%;
+  margin: 2% 3% 7% 3%;
+  /* background-color: rgb(187, 8, 8); */
+  color: white;
+  padding: 2%;
+  border-radius: 5%;
+  /* background-color: #697184; */
+  /* box-shadow: gray; */
+  
+  
 }
 
 .carousel_container .flip-card {
@@ -752,8 +787,13 @@ section {
   color: white;
   padding: 2%;
   border-radius: 5%;
-  box-shadow: gray;
+  /* box-shadow: gray; */
   
+  
+}
+
+.carousel_container #rank3{
+  margin-left: 24%;
   
 }
 
@@ -766,51 +806,83 @@ section {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
 }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+ .carousel_container .flip-card-front, .carousel_container .flip-card-back {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 85%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  color:white;
 }
 
-.flip-card-front {
-  background-color:#ff7f71;
+
+
+.carousel_container .flip-card-front {
+  background-color:#6FB3B8;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
 
-.flip-card-back {
-  background-color: #ff7f71;
+.carousel .flip-card-back {
+  background-color: #6FB3B8;
   color: white;
   transform: rotateY(180deg);
   padding: 4%;
 }
 
+.carousel_container h4{
+  color:white;
+}
+
 @media (max-width: 756px){
-  .duties_container{
-    display: flex;
-    flex-direction: column;
-    margin-top: 2%;
+  
+
+  .carousel_container{
+    margin-top:10px ;
   }
 
-  .flip-card {
-    position: relative;
-    background-color: transparent;
-    width: 100%;
-    height: 10em;
-    perspective: 1000px;
-    margin: 2% 2% 0 2%;
-    float: left;
+  .carousel_container .flip-card-inner{
+    margin:5px 0;
+  }
+
+  .carousel_container .flip-card {
+    display: inline-block; 
+    width: 93%;
+    height:22em;
+    margin: 1% 4% 71% 4%;
+    /* background-color: rgb(187, 8, 8); */
+    color: white;
+    padding: 2%;
+    border-radius: 5%;
+    box-shadow: gray;
     
     
   }
+
+  .carousel_container .carousel-item  img {
+    width: 40%;
+    border-radius: 100%;
+    margin:7%;
+  
+  }
+  .carousel_container #rank3{
+    margin-top:25%;
+    margin-left: 3%;
+    width:93%;
+    
+  }
+  
 
       
   
@@ -833,6 +905,7 @@ section {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around ;
+  margin-top: 60px;
   
   
  
@@ -855,6 +928,8 @@ section {
   text-align: center;
   flex: 1 1 100%;
 }
+
+
 
 @media (min-width: 992px){
 .duties .col-lg-3 {
@@ -893,17 +968,21 @@ section {
   border: 1px solid rgb(32, 7, 63);
   border-radius: 2%;
   flex: 1 1 100%;
+  
 }
 
  .duties .icon { 
-  margin: 0 auto 20px auto;
-  padding-top: 17px;
+  /* margin: 0 auto 20px auto; */
+  /* padding-top: 17px; */
   display: inline-block;
-  width:30%;
-  text-align: center;
-  border-radius: 50%;
-  width: 72px;
-  height: 72px;
+  /* width:30%; */
+  position: absolute;
+  /* border-radius: 50%; */
+  margin-left: -79px;
+
+  bottom: 6px;
+  width: 50%;
+  height: 50%px;
  } 
  
  
@@ -923,7 +1002,7 @@ section {
 }
 
 .duties h4  {
-  color: #111;
+
 }
 
 .duties .description {
@@ -962,6 +1041,7 @@ section {
 .duties_container{
   display: flex;
   margin-top: 2%;
+  margin-bottom: 60px;
 }
 
 .flip-card {
@@ -969,6 +1049,7 @@ section {
   background-color: transparent;
   width: 30%;
   height: 16em;
+  
   perspective: 1000px;
   margin: 2% 2% 0 2%;
   float: left;
@@ -985,7 +1066,7 @@ section {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
 }
 
 .flip-card:hover .flip-card-inner {
@@ -999,6 +1080,14 @@ section {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+.flip-card-back{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2%;
+  
+}
+
 
 .flip-card-front {
   background-color:#ff7f71;
@@ -1012,11 +1101,27 @@ section {
   padding: 4%;
 }
 
+.duty1 {
+  background-color: #29F500;
+}
+
+.duty2{
+  background-color: #00BBCC;
+}
+.duty3{
+  background-color: #5C9AFF;
+}
+
+.duty4{
+  background-color: #9785FF;
+}
+
 @media (max-width: 756px){
   .duties_container{
     display: flex;
     flex-direction: column;
     margin-top: 2%;
+    
   }
 
   .flip-card {
@@ -1029,6 +1134,11 @@ section {
     float: left;
     
     
+  }
+
+  .duties .icon {
+    width:29%;
+    margin-left: -18%;
   }
 
       
@@ -1367,6 +1477,7 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+
 .team .row {
   justify-content: center;
 }
@@ -1442,9 +1553,14 @@ section {
   margin: 0 2px;
 }
 
+
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
+
+
 .contact .info-box {
   color: #444444;
   text-align: center;

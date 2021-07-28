@@ -24,25 +24,23 @@ def user_register(request):
         # check whether it's valid:
         if form.is_valid():
 
-            if User.objects.filter(username=form.cleaned_data['username']).exists():
-                return render(request, template, {
-                    'form': form,
-                    'error_message': 'Username already exists.'
-                })
-
-            elif User.objects.filter(email=form.cleaned_data['email']).exists():
+            if Extendeduser.objects.filter(email=form.cleaned_data['email']).exists():
                 return render(request, template, {
                     'form': form,
                     'error_message': 'Email already exists.'
                 })
+
+            
            
             else:
                 # Create the user:
-                user = User.objects.create_user(
-                    form.cleaned_data['username'],
-                    form.cleaned_data['email'],
+                
+                # user = User.objects.create_user(
+                #     # form.cleaned_data['username'],
+                #     form.cleaned_data['email']
                     
-                )
+                # )
+                
                 extendeduser = Extendeduser()
                 extendeduser.first_name = form.cleaned_data['first_name']
                 extendeduser.last_name = form.cleaned_data['last_name']
@@ -53,7 +51,8 @@ def user_register(request):
                 extendeduser.permanent_address = form.cleaned_data['permanent_address']
                 extendeduser.state = form.cleaned_data['state']
                 extendeduser.email = form.cleaned_data['email']
-                extendeduser.user = user
+                extendeduser.pincode = form.cleaned_data['pincode']
+                # extendeduser.user = user
                 extendeduser.save()
 
                 subject = 'Successfully registered for CA portal'
