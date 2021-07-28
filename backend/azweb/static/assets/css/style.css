@@ -772,6 +772,7 @@ section {
   color: white;
   padding: 2%;
   border-radius: 5%;
+  /* background-color: #697184; */
   /* box-shadow: gray; */
   
   
@@ -823,7 +824,7 @@ section {
 
 
 .carousel_container .flip-card-front {
-  background-color:#cc1616;
+  background-color:#6FB3B8;
   color: white;
   display: flex;
   flex-direction: column;
@@ -832,8 +833,8 @@ section {
   
 }
 
-.flip-card-back {
-  background-color: #cc1616;
+.carousel .flip-card-back {
+  background-color: #6FB3B8;
   color: white;
   transform: rotateY(180deg);
   padding: 4%;
@@ -926,6 +927,8 @@ section {
   text-align: center;
   flex: 1 1 100%;
 }
+
+
 
 @media (min-width: 992px){
 .duties .col-lg-3 {
@@ -1095,6 +1098,21 @@ section {
   color: white;
   transform: rotateY(180deg);
   padding: 4%;
+}
+
+.duty1 {
+  background-color: #29F500;
+}
+
+.duty2{
+  background-color: #00BBCC;
+}
+.duty3{
+  background-color: #5C9AFF;
+}
+
+.duty4{
+  background-color: #9785FF;
 }
 
 @media (max-width: 756px){
