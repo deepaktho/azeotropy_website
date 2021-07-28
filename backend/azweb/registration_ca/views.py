@@ -8,6 +8,10 @@ from django.http import HttpResponse
 
 from django.core.mail import send_mail
 
+from django.core.mail import EmailMultiAlternatives
+from django.template.loader import render_to_string
+from django.utils.html import strip_tags
+
 
 
 def Registration(request):
@@ -33,6 +37,7 @@ def user_register(request):
             
            
             else:
+                print('hellow world')
                 # Create the user:
                 
                 # user = User.objects.create_user(
@@ -55,20 +60,31 @@ def user_register(request):
                 # extendeduser.user = user
                 extendeduser.save()
 
-                subject = 'Successfully registered for CA portal'
-                message = f'congratulations {extendeduser.first_name}{extendeduser.last_name} have successfully registered on CA portal'
+                subject = "Successfully registered for AZeotropy Campus Ambassador "
+                # message = f'congratulations {extendeduser.first_name}{extendeduser.last_name} have successfully registered on CA portal'
                 from_email = 'deepakthorat900@gmail.com'
                 to_email = extendeduser.email
+                name1 = str(extendeduser.first_name).title()
+                html_message = render_to_string("mail.html",{'name':name1})
+                message = strip_tags(html_message)
 
-                send_mail(
-                            subject,
+                email3 = EmailMultiAlternatives(subject,
                             message,
                             from_email,
                             [to_email],
-                            fail_silently=False,
-                        )
+                            )
+                email3.attach_alternative(html_message,'text/html')
+                email3.send()
+
+                # send_mail(
+                #             subject,
+                #             message,
+                #             from_email,
+                #             [to_email],
+                #             fail_silently=False,
+                #         )
                 extendeduser.save()
-                message = 'You have successfully registered to CA portal'                
+                message = 'You have successfully registered on CA portal'                
                 return render(request, "index.html",{'message':message})
                
                 
