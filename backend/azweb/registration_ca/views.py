@@ -7,7 +7,7 @@ from .models import Extendeduser
 from django.http import HttpResponse
 
 from django.core.mail import send_mail
-
+from django.conf import settings 
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import render_to_string
 from django.utils.html import strip_tags
@@ -69,6 +69,7 @@ def user_register(request):
 
                 email3 = EmailMultiAlternatives(subject,
                             message,
+                            settings.EMAIL_HOST_USER,
                             [to_email],
                             )
                 email3.attach_alternative(html_message,'text/html')
