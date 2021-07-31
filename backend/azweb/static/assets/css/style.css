@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 60px;
 }
 
 .scrolled-offset {
@@ -698,7 +698,7 @@ section {
 
 .services .icon-box p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 0;
 }
 
@@ -2024,7 +2024,7 @@ section {
 }
 
 .footer-distributed .footer-links a:before {
-  content: "·";
+  
   font-size: 20px;
   left: 0;
   color: #fff;
@@ -2061,16 +2061,3 @@ section {
 .footer-distributed p.footer-links a:hover{text-decoration:underline;}
 
 /* Media Queries */
-
-@media (max-width: 600px) {
-  .footer-distributed .footer-left, .footer-distributed .footer-right {
-    text-align: center;
-  }
-  .footer-distributed .footer-right {
-    float: none;
-    margin: 0 auto 20px;
-  }
-  .footer-distributed .footer-left p.footer-links {
-    line-height: 1.8;
-  }
-}
