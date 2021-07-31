@@ -62,7 +62,6 @@ def user_register(request):
 
                 subject = "Successfully registered for AZeotropy Campus Ambassador "
                 # message = f'congratulations {extendeduser.first_name}{extendeduser.last_name} have successfully registered on CA portal'
-                from_email = 'deepakthorat900@gmail.com'
                 to_email = extendeduser.email
                 name1 = str(extendeduser.first_name).title()
                 html_message = render_to_string("mail.html",{'name':name1})
@@ -70,7 +69,6 @@ def user_register(request):
 
                 email3 = EmailMultiAlternatives(subject,
                             message,
-                            from_email,
                             [to_email],
                             )
                 email3.attach_alternative(html_message,'text/html')
