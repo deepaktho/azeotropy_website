@@ -1097,6 +1097,7 @@ section {
 .flip-card-front {
   background-color:#ff7f71;
   color: white;
+  padding-bottom: 2%;
 }
 
 .flip-card-back {
