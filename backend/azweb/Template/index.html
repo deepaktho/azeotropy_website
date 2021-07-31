@@ -124,8 +124,9 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
-            <video width="100%" height="100%" controls>
+            <video muted width="100%" height="100%" controls autoplay>
               <source src="{% static 'assets/img/video_2020.mp4' %}" type="video/mp4">
+             
             </video>
 
          
@@ -257,7 +258,7 @@
             <div class="icon-box">
               <div class="icon"><i class="bx bx-slideshow"></i></div>
               <h4><a href="">Free workshops</a></h4>
-              <p> Every Campus Ambassador can attend any 2 workshops that will be organised by AZeotropy(online)
+              <p> Every CA can attend any 2 workshops that will be organised by AZeotropy(online)
                 absolutely free of cost. Why not learn something valuable and interesting?</p>
 
             </div>
@@ -329,7 +330,7 @@
         <div class="section-title">
           <span>Responsibilities</span>
           <h2>Responsibilities</h2>
-          <!-- <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p> -->
+       <h3><p>Your role as a campus ambassador</p> </h3>
         </div>
 
 
@@ -441,7 +442,7 @@
           <div class="section-title">
             <span>Testimonial</span>
             <h2>Testimonial</h2>
-            <!-- <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p> -->
+        <h3><p>See what our campus ambassadors have to say</p> </h3>
           </div>
           <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel"
             data-bs-touch="false" data-bs-interval="false">
@@ -1215,15 +1216,17 @@
 			<div class="footer-left">
 
 				<p class="footer-links">
-					<a class="https://azeotropyiitbblog.wordpress.com" href="#">AZeotropy's blog</a>
+          <br><br>
+					<a class="https://azeotropyiitbblog.wordpress.com" href="#">Blog</a>
 
-
+</p>
+<p class="footer-links">
 					<a href="https://azeotropyiitbblog.wordpress.com/about-the-symposium/">About</a>
 
-					<a href="mailto:#">Contact</a>
+				
 				</p>
 
-				<p>AZeotropy  &copy; 2022</p>
+				<p>&copy; AZeotropy 22</p>
 			</div>
 
 		</footer>
@@ -1267,7 +1270,7 @@
           $(this).prop('Counter', 0).animate({
             Counter: $(this).text()
           }, {
-            duration: 8000,
+            duration: 5000,
             easing: 'swing',
             step: function (now) {
               $(this).text(Math.ceil(now));
