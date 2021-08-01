@@ -741,6 +741,9 @@ section {
 .carousel_container .carousel-item i{
   align-self: start;
 }
+.carousel_container .carousel-inner{
+  overflow: visible;
+}
 
 .carousel_container .carousel-item div{
   
@@ -754,15 +757,15 @@ section {
 
 
 .carousel_container .carousel-item  img {
-  width: 20%;
+  width: 30%;
   height:50%;
   border-radius: 10%;
-  margin:7%;
+  margin:3%;
 
 }
 
 .carousel-indicators{
-  margin: 0 23% -2em 20%;
+  margin: 5% 23% -4em 20%;
 }
 
 .carousel_container .flip-card {
@@ -850,7 +853,26 @@ section {
   color:white;
 }
 
-@media (max-width: 756px){
+@media (max-width: 1150px){
+  .carousel_container{
+    padding-bottom: 10%;
+    /* border: red 2px solid; */
+  }
+
+  /* .carousel_container .carousel-item  img {
+    width: 1%;
+    height:2%;
+    border-radius: 100%;
+    margin:3%;
+  
+  } */
+  .carousel-indicators{
+    margin: 5% 23% -3em 20%;
+  }
+  
+}
+
+@media (max-width: 750px){
   
 
   .carousel_container{
@@ -1567,6 +1589,12 @@ section {
 .team .member .social i {
   font-size: 18px;
   margin: 0 2px;
+}
+
+@media(max-width:1150px){
+  .team{
+    /* margin-top: 20px; */
+  }
 }
 
 
