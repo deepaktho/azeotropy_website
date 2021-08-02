@@ -70,7 +70,7 @@ def user_register(request):
 
                 email3 = EmailMultiAlternatives(subject,
                             message,
-                            settings.EMAIL_HOST_USER,
+                            'deepakthorat900@gmail.com',
                             
                             [to_email],
                             )
