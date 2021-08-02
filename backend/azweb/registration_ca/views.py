@@ -70,8 +70,7 @@ def user_register(request):
 
                 email3 = EmailMultiAlternatives(subject,
                             message,
-                            'deepakthorat900@gmail.com',
-                            
+                            'deepak@azeotropy.org',                            
                             [to_email],
                             )
                 email3.attach_alternative(html_message,'text/html')
