@@ -53,8 +53,8 @@ MIDDLEWARE = [
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.yandex.ru'
-EMAIL_HOST_USER = 'sabhyasanchi@azeotropy.org'
-EMAIL_HOST_PASSWORD = 'sabhya123'  
+EMAIL_HOST_USER = 'deepak@azeotropy.org'
+EMAIL_HOST_PASSWORD = 'deepak123@'  
 EMAIL_PORT = 587
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
