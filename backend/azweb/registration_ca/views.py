@@ -37,7 +37,7 @@ def user_register(request):
             
            
             else:
-                print('hellow world')
+                # print('hellow world')
                 # Create the user:
                 
                 # user = User.objects.create_user(
