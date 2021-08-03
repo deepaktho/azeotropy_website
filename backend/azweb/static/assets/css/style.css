@@ -179,21 +179,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo {
-  font-size: 30px;
+  /* font-size: 30px; */
   margin: 0;
   padding: 0;
-  line-height: 1;
+  /* line-height: 1; */
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
+  height: 200px;
 }
 
 #header .logo a {
   color: #fff;
+  /* border: solid 2px red; */
+
 }
 
 #header .logo img {
-  max-height: 60px;
+  /* max-height: 60px; */
+  width:200px;
+  /* border: solid 2px red; */
 }
 
 .scrolled-offset {
@@ -752,7 +757,12 @@ section {
 .carousel_container .flip-card-back{
 
 }
-
+@media (min-width: 1150px){
+  width: 30%;
+  height:80%;
+  border-radius: 10%;
+  margin:3%;
+}
 
 
 
@@ -2038,7 +2048,7 @@ section {
 .footer-distributed .footer-left p {
   color: #8f9296;
   font-size: 14px;
-  margin: 0;
+  margin-left: 10px;
 }
 /* Footer links */
 
@@ -2055,6 +2065,7 @@ section {
   display: inline-block;
   line-height: 1.8;
   text-decoration: none;
+  padding:10px;
   color: inherit;
   transition: ease .25s;
 }
@@ -2163,7 +2174,24 @@ section {
     margin-left: 16px;
     transition:all .25s;
   }
+  .footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin-left: 0px;
+  }
+
+  .footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    padding:5px;
+    color: inherit;
+    transition: ease .25s;
+  }
   
 }
+
+
+
 
 /* Media Queries */
