@@ -622,7 +622,7 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
-.clients {
+/* .clients {
   background: #f2f2f2;
   padding: 15px 0;
   text-align: center;
@@ -645,7 +645,7 @@ section {
   .clients img {
     width: 40%;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Services
@@ -750,13 +750,7 @@ section {
   overflow: visible;
 }
 
-.carousel_container .carousel-item div{
-  
-}
 
-.carousel_container .flip-card-back{
-
-}
 
 
 
@@ -1259,7 +1253,7 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio #portfolio-flters {
+/* .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 25px auto;
   list-style: none;
@@ -1360,11 +1354,11 @@ section {
   opacity: 1;
   bottom: 20px;
 }
-
+ */
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
+/* .portfolio-details {
   padding-top: 40px;
 }
 
@@ -1424,12 +1418,12 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
-}
+} */
 
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
-.pricing .box {
+/* .pricing .box {
   padding: 20px;
   background: #f9f9f9;
   text-align: center;
@@ -1539,7 +1533,7 @@ section {
 .pricing .featured .btn-buy:hover {
   background: #fff;
   color: #ff7f71;
-}
+} */
 
 /*--------------------------------------------------------------
 # Team
@@ -1620,11 +1614,7 @@ section {
   margin: 0 2px;
 }
 
-@media(max-width:1150px){
-  .team{
-    /* margin-top: 20px; */
-  }
-}
+
 
 
 
