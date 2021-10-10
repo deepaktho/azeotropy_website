@@ -25,7 +25,7 @@ SECRET_KEY = '#&juysx(b8kh&$6+#&^*z+29s_ih7j5u$yt%&4gtclf1j0i%x^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*','www.azeotropy.org']
 
 
 # Application definition
@@ -53,9 +53,9 @@ MIDDLEWARE = [
 ]
 
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.yandex.ru'
-EMAIL_HOST_USER = 'deepak@azeotropy.org'
-EMAIL_HOST_PASSWORD = 'deepak123@'  
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'azeo2022@gmail.com'
+EMAIL_HOST_PASSWORD = 'AZeo@123'
 EMAIL_PORT = 587
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 

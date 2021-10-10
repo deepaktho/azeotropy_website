@@ -180,7 +180,11 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .logo {
   /* font-size: 30px; */
+  position:relative;
+  display: flex;
+  align-items: center;
   margin: 0;
+
   padding: 0;
   /* line-height: 1; */
   font-weight: 700;
@@ -209,7 +213,7 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -313,7 +317,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #fff;
@@ -622,7 +626,7 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
-.clients {
+/* .clients {
   background: #f2f2f2;
   padding: 15px 0;
   text-align: center;
@@ -645,7 +649,7 @@ section {
   .clients img {
     width: 40%;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Services
@@ -740,7 +744,7 @@ section {
   /* width:50%; */
   margin: auto;
   text-align: center;
-  
+
 }
 
 .carousel_container .carousel-item i{
@@ -750,20 +754,14 @@ section {
   overflow: visible;
 }
 
-.carousel_container .carousel-item div{
-  
-}
 
-.carousel_container .flip-card-back{
-
-}
 
 
 
 .carousel_container .carousel-item  img {
-  width: 30%;
-  height:50%;
-  border-radius: 10%;
+  width:30%;
+  height:auto;
+  border-radius: 100%;
   margin:3%;
 
 }
@@ -771,14 +769,14 @@ section {
 
 
 
-}
+
 
 .carousel-indicators{
   margin: 5% 23% -4em 20%;
 }
 
 .carousel_container .flip-card {
-  display: inline-block; 
+  display: inline-block;
   width: 43%;
   margin: 2% 3% 7% 3%;
   /* background-color: rgb(187, 8, 8); */
@@ -787,27 +785,27 @@ section {
   border-radius: 5%;
   /* background-color: #697184; */
   /* box-shadow: gray; */
-  
-  
+
+
 }
 
 .carousel_container .flip-card {
-  display: inline-block; 
+  display: inline-block;
   width: 43%;
-  
+
   margin: 2% 3% 7% 3%;
   /* background-color: rgb(187, 8, 8); */
   color: white;
   padding: 2%;
   border-radius: 5%;
   /* box-shadow: gray; */
-  
-  
+
+
 }
 
 .carousel_container #rank3{
   margin-left: 24%;
-  
+
 }
 
 
@@ -846,7 +844,7 @@ section {
   justify-content: center;
   align-items: center;
 
-  
+
 }
 
 .carousel .flip-card-back {
@@ -864,8 +862,8 @@ section {
 
 @media (min-width: 1150px){
   .carousel_container .carousel-item  img {
-  width: 27%;
-  height:60%;
+  width: 30%;
+  height:auto;
   border-radius: 100%;
   margin:3%;
 }
@@ -888,21 +886,21 @@ section {
     /* border: red 2px solid; */
   }
 
-  /* .carousel_container .carousel-item  img {
-    width: 1%;
-    height:2%;
-    border-radius: 100%;
-    margin:3%;
-  
-  } */
+  /* .carousel_container .carousel-item  img {*/
+  /*  width: 1%;*/
+  /*  height:2%;*/
+  /*  border-radius: 100%;*/
+  /*  margin:3%;*/
+
+  /*}*/
   .carousel-indicators{
     margin: 5% 23% -3em 20%;
   }
-  
+
 }
 
 @media (max-width: 750px){
-  
+
 
   .carousel_container{
     margin-top:10px ;
@@ -913,7 +911,7 @@ section {
   }
 
   .carousel_container .flip-card {
-    display: inline-block; 
+    display: inline-block;
     width: 93%;
     height:22em;
     margin: 1% 4% 71% 4%;
@@ -922,43 +920,43 @@ section {
     padding: 2%;
     border-radius: 5%;
     box-shadow: gray;
-    
-    
+
+
   }
 
   .carousel_container .carousel-item  img {
-    
-      width: 40%;
-      height:40%;
-      border-radius: 10%;
+
+      width: 50%;
+      height:auto;
+      border-radius: 100%;
       margin:7%;
-    
-    
-    
+
+
+
   }
   .carousel_container #rank3{
     margin-top:25%;
     margin-left: 3%;
     width:93%;
-    
-  }
-  
 
-      
-  
-  
-  
   }
-  
+
+
+
+
+
+
+  }
+
 
 
 
 
 /* duties */
 
- 
-  
-  
+
+
+
 
  .duties  {
   position: relative;
@@ -966,9 +964,9 @@ section {
   flex-flow: column wrap;
   justify-content: space-around ;
   margin-top: 60px;
-  
-  
- 
+
+
+
 }
 
 .duties .icon img{
@@ -996,7 +994,7 @@ section {
 
     flex: 0 0 auto;
     width: 20%;
-    
+
 }
 
 
@@ -1013,11 +1011,11 @@ section {
   width:18%;
   margin: 10px;
 }
-  
+
  .duties .row .icon-box {
   padding: 30px;
-   position: relative; 
-   overflow: hidden; 
+   position: relative;
+   overflow: hidden;
   color: rgb(133, 131, 131);
   width: 18%;
   margin: 0  10px 40px 10px;
@@ -1028,10 +1026,10 @@ section {
   border: 1px solid rgb(32, 7, 63);
   border-radius: 2%;
   flex: 1 1 100%;
-  
+
 }
 
- .duties .icon { 
+ .duties .icon {
   /* margin: 0 auto 20px auto; */
   /* padding-top: 17px; */
   display: inline-block;
@@ -1043,9 +1041,9 @@ section {
   bottom: 6px;
   width: 50%;
   height: 50%;
- } 
- 
- 
+ }
+
+
 
 .duties .icon i {
   font-size: 36px;
@@ -1084,10 +1082,10 @@ section {
 }
 
 .duties .icon-box:hover p, .services .icon-box:hover h4, .services .icon-box:hover img{
-  
+
   color: white;
 
-  
+
 }
 
 .duties .icon-box:hover h4{
@@ -1097,7 +1095,7 @@ section {
 
 .duties  .chemophilia:hover p {
 }
-  
+
 .duties_container{
   display: flex;
   margin-top: 2%;
@@ -1109,12 +1107,12 @@ section {
   background-color: transparent;
   width: 30%;
   height: 16em;
-  
+
   perspective: 1000px;
   margin: 2% 2% 0 2%;
   float: left;
-  
-  
+
+
 }
 
 
@@ -1137,7 +1135,7 @@ section {
   position: absolute;
   width: 100%;
   height: 100%;
-  
+
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -1146,7 +1144,7 @@ section {
   justify-content: center;
   align-items: center;
   padding-bottom: 2%;
-  
+
 }
 
 
@@ -1183,7 +1181,7 @@ section {
     display: flex;
     flex-direction: column;
     margin-top: 2%;
-    
+
   }
 
   .flip-card {
@@ -1194,8 +1192,8 @@ section {
     perspective: 1000px;
     margin: 2% 2% 0 2%;
     float: left;
-    
-    
+
+
   }
 
   .duties .icon {
@@ -1206,14 +1204,14 @@ section {
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
-  
 
-      
-  
-  
-  
+
+
+
+
+
   }
-  
+
 
 
 
@@ -1259,7 +1257,7 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio #portfolio-flters {
+/* .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 25px auto;
   list-style: none;
@@ -1360,11 +1358,11 @@ section {
   opacity: 1;
   bottom: 20px;
 }
-
+ */
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
+/* .portfolio-details {
   padding-top: 40px;
 }
 
@@ -1424,12 +1422,12 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
-}
+} */
 
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
-.pricing .box {
+/* .pricing .box {
   padding: 20px;
   background: #f9f9f9;
   text-align: center;
@@ -1539,7 +1537,7 @@ section {
 .pricing .featured .btn-buy:hover {
   background: #fff;
   color: #ff7f71;
-}
+} */
 
 /*--------------------------------------------------------------
 # Team
@@ -1560,11 +1558,11 @@ section {
 }
 
 .team .row .email span {
-  
+
   margin-left: 0.5em;
 }
 .team .row .phone span{
-  
+
   margin-left: 0.5em;
 }
 
@@ -1620,11 +1618,7 @@ section {
   margin: 0 2px;
 }
 
-@media(max-width:1150px){
-  .team{
-    /* margin-top: 20px; */
-  }
-}
+
 
 
 
@@ -2090,7 +2084,7 @@ section {
 }
 
 .footer-distributed .footer-links a:before {
-  
+
   font-size: 20px;
   left: 0;
   color: #fff;
@@ -2106,7 +2100,7 @@ section {
 
 .footer-distributed .footer-left {
   display: inline-block;
-  
+
   margin-top: -42px;
   /* max-width: 30%; */
 }
@@ -2164,7 +2158,7 @@ section {
   }
 
   .footer-distributed .footer-right {
-    
+
     float: right;
     margin-top: 6px;
     max-width: 100px;
@@ -2207,7 +2201,7 @@ section {
     color: inherit;
     transition: ease .25s;
   }
-  
+
 }
 
 

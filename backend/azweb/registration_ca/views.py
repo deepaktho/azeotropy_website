@@ -7,7 +7,7 @@ from .models import Extendeduser
 from django.http import HttpResponse
 
 from django.core.mail import send_mail
-from django.conf import settings 
+from django.conf import settings
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import render_to_string
 from django.utils.html import strip_tags
@@ -21,7 +21,7 @@ def Registration(request):
 def user_register(request):
     # if this is a POST request we need to process the form data
     template = 'register.html'
-   
+
     if request.method == 'POST':
         # create a form instance and populate it with data from the request:
         form = RegisterForm(request.POST)
@@ -34,18 +34,18 @@ def user_register(request):
                     'error_message': 'Email already exists.'
                 })
 
-            
-           
+
+
             else:
                 # print('hellow world')
                 # Create the user:
-                
+
                 # user = User.objects.create_user(
                 #     # form.cleaned_data['username'],
                 #     form.cleaned_data['email']
-                    
+
                 # )
-                
+
                 extendeduser = Extendeduser()
                 extendeduser.first_name = form.cleaned_data['first_name']
                 extendeduser.last_name = form.cleaned_data['last_name']
@@ -63,14 +63,14 @@ def user_register(request):
                 subject = "Successfully registered for AZeotropy Campus Ambassador "
                 # message = f'congratulations {extendeduser.first_name}{extendeduser.last_name} have successfully registered on CA portal'
                 to_email = extendeduser.email
-                
+
                 name1 = str(extendeduser.first_name).title()
                 html_message = render_to_string("mail.html",{'name':name1})
                 message = strip_tags(html_message)
 
                 email3 = EmailMultiAlternatives(subject,
                             message,
-                            'deepak@azeotropy.org',                            
+                            'azeo2022@gmail.com',
                             [to_email],
                             )
                 email3.attach_alternative(html_message,'text/html')
@@ -84,12 +84,12 @@ def user_register(request):
                 #             fail_silently=False,
                 #         )
                 extendeduser.save()
-                message = 'You have successfully registered on CA portal'                
+                message = 'You have successfully registered on CA portal'
                 return render(request, "index.html",{'message':message})
-               
-                
-                
-               
+
+
+
+
                 # redirect to home page:
                 #return redirect('registration_ca:index')
 
@@ -101,8 +101,8 @@ def user_register(request):
 
 
 
-            
-            
 
 
-    
+
+
+
