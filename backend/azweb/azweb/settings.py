@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['*','www.azeotropy.org']
 
 INSTALLED_APPS = [
     'registration_ca.apps.RegistrationCaConfig',
+    'chem_e_cross.apps.ChemECrossConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
