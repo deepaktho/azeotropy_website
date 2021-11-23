@@ -20,6 +20,7 @@ from django.views.static import serve
 # from azweb import settings
 
 urlpatterns = [
+    
     path('',include('registration_ca.urls')),
     path('',include('chem_e_cross.urls')),
     path('admin/', admin.site.urls),

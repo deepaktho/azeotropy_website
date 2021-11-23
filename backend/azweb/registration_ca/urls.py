@@ -7,6 +7,7 @@ app_name = "registration_ca"
 
 
 urlpatterns = [
+    path('',views.Index, name = 'main_website'),
     path('ca',views.Registration,name='index'),
     path('register', views.user_register, name = "register"),
    

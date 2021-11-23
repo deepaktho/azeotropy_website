@@ -12,7 +12,8 @@ from django.core.mail import EmailMultiAlternatives
 from django.template.loader import render_to_string
 from django.utils.html import strip_tags
 
-
+def Index(request):
+    return render(request, 'main_website/index.html')
 
 def Registration(request):
 
