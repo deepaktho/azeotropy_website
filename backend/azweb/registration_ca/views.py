@@ -15,6 +15,9 @@ from django.utils.html import strip_tags
 def Index(request):
     return render(request, 'main_website/index.html')
 
+def Competition(request):
+    return render(request, 'main_website/competitions.html')
+
 def Registration(request):
 
         return render(request, 'ca_portal/ca.html')
