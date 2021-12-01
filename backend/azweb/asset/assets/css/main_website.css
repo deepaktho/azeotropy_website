@@ -373,7 +373,7 @@ body {
   }
   
   .section-bg {
-    background: linear-gradient(180deg, #4f14bd 0%, rgb(179, 27, 27) 100%);
+    background: linear-gradient(180deg, #f2f6fa 0%, #fff 100%);
   }
   
   .section-title {
@@ -519,7 +519,7 @@ body {
     margin-left: 60px;
   }
   .about .image {
-    background: url("../img/about.jpg") center center no-repeat;
+   
     background-size: cover;
     min-height: 400px;
   }
