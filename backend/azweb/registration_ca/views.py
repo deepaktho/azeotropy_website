@@ -15,8 +15,21 @@ from django.utils.html import strip_tags
 def Index(request):
     return render(request, 'main_website/index.html')
 
+def Events(request):
+    return render(request, 'main_website/events.html')
+
+def About_us(request):
+    return render(request, 'main_website/about_us.html')
+
+def Sponsors(request):
+    return render(request, 'main_website/sponsors.html')
+
 def Competition(request):
     return render(request, 'main_website/competitions.html')
+
+def Workshop(request):
+    return render(request, 'main_website/competitions.html')
+
 
 def Registration(request):
 
