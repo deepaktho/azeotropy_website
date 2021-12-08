@@ -2,26 +2,76 @@
 
 {% load static %}
 
+{% block video %}
+  <style>
+    #header{
+      background-color: transparent;
+      
+    }
     
+    .navbar a, .navbar a:focus {
+     
+      color: #33c319;
+      
+  }
+
+  .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    color: #189808;
+    font-weight: bolder;
+}
+
+    /* video */
+#videoDiv {width: 100%; height: 90%; position: relative;}
+#video1 { margin: auto; display: block; width: 100%;}
+#videoMessage { position: absolute; top: 0; left: 10%;
+display: flex;
+flex-direction: column; 
+justify-content: center;
+align-items: left; 
+width: 100%;
+height: 100%;}
+  </style>
+
+
+  {% endblock %}
+
+ 
 
   {% block content %}
   <!-- ======= Hero Section ======= -->
-  <section id="hero">
+  <!-- <section id="hero"> -->
 
-    <div class="container">
-      <div class="row d-flex align-items-center">
+    <div id="videoDiv"> 
+      <video id="video1" preload="" autoplay="" muted="" playsinline="" loop="" >
+      <source src="{% static 'assets/img/main_website_image/frontpage_video.mp4' %}" type="">
+      </video> 
+      <div id="videoMessage" class="styling">
+      <h1>The Early Bird...</h1>
+      <h2>...gets the food.</h2>
+      <h3>Don't be late!</h3>
+      <p class="videoClick">
+      <a href="https://www.imi21.com/background-video-full-screen.php">Click here and be impressed</a>
+      </p> 
+      </div>
+      </div>
+
+    
+
+    
+      <!-- <div class="row d-flex align-items-center">
       <div class=" col-lg-6 py-5 py-lg-0 order-2 order-lg-1" data-aos="fade-right">
         <h1>Your new digital experience with Bocor</h1>
         <h2>We are team of talented designers making websites with Bootstrap</h2>
         <a href="#about" class="btn-get-started scrollto">Get Started</a>
-      </div>
-      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
+      </div> -->
+      <!-- <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
         <img src="{% static 'assets/img/main_website_image/hero-img.png' %}" class="img-fluid" alt="">
-      </div>
-    </div>
-    </div>
+      </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
 
-  </section><!-- End Hero -->
+  <!-- </section> -->
+  <!-- End Hero -->
 
   <main id="main">
 
