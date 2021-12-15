@@ -22,11 +22,10 @@
          border-radius: 4%;
          box-shadow: 10px 5px 5px rgb(206, 201, 201);
      }
-     h4{
-         font-size: 3em;
+     .heading{
+         
          margin-top: 5%;
-         color: black;
-         text-align: center;
+         
      }
      .intro h6{
          text-align: center;
@@ -45,24 +44,43 @@
 {% endblock %}
 
 {% block content %}
-<div><h4>Chem-O-Philia</h4></div>
+<div class="section-title heading ">
+    <h2 data-aos="fade-in">Chem-O-Philia</h2>
+      </div>
+
+
+      <div class="row content">
+        <div class="col-md-5" data-aos="fade-right">
+          <img src="{% static 'assets/img/main_website_image/features-3.svg' %}" class="img-fluid" alt="">
+        </div>
+        <div class="col-md-7 pt-5" data-aos="fade-left">
+          <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
+          <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+          <ul>
+            <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+            <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+            <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+          </ul>
+        </div>
+      </div>
+
 <div class="container1">
-    <div class="intro">
+    <div class="intro col-lg-4 col-md-6" data-aos="fade-right">
         
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum tempora voluptatibus iste beatae ullam id consequuntur perferendis nesciunt doloribus voluptate molestiae, veritatis laborum magnam error cupiditate voluptatum pariatur quasi dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem natus illo libero nemo sed facilis porro inventore quos quia, repudiandae rem aliquid, tenetur laudantium nostrum pariatur! Saepe facere deleniti iure! </p>
+        <p data-aos="fade-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum tempora voluptatibus iste beatae ullam id consequuntur perferendis nesciunt doloribus voluptate molestiae, veritatis laborum magnam error cupiditate voluptatum pariatur quasi dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem natus illo libero nemo sed facilis porro inventore quos quia, repudiandae rem aliquid, tenetur laudantium nostrum pariatur! Saepe facere deleniti iure! </p>
 
         <div><a href="">Instructions</a></div>
         <div><a href="">Register</a></div>
     </div>
-    <div class="poster">
+    <div class="poster" data-aos="fade-left">
         <img src="{% static 'assets/img/main_website_image/clients/client-1.png' %}" alt="">
     </div>
 
 </div>
 
-<div class="rules contact">
+<div class="rules contact" data-aos="fade-right">
     <div>
-        <h4>Rules</h4>
+        <h4 data-aos="fade-in">Rules</h4>
     <ol>
         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis tenetur officiis quidem accusantium iure repellat tempora aspernatur aperiam quo assumenda ipsam consequuntur consequatur quasi maiores qui, quisquam facere fugit!</li>
         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis tenetur officiis quidem accusantium iure repellat tempora aspernatur aperiam quo assumenda ipsam consequuntur consequatur quasi maiores qui, quisquam facere fugit!</li>
@@ -72,7 +90,7 @@
     </div>
 
     <div>
-        <h4>Contact</h4>
+        <h4 data-aos="fade-in">Contact</h4>
 
     </div>
 

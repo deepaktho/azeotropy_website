@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Bocor Bootstrap Template - Index</title>
+  <title>AZeotropy</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -27,9 +27,10 @@
   <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
   <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
   
-
+  
   <!-- Template CSS File -->
-  <link href="{% static 'assets/css/main_website.css' %}" rel="stylesheet">
+  {% block css_file %}
+  <link href="{% static 'assets/css/main_website.css' %}" rel="stylesheet"> {% endblock %}
 
   <!-- =======================================================
   * Template Name: Bocor - v4.6.0
@@ -39,8 +40,8 @@
   ======================================================== -->
 </head>
 
-{% block css %}
 
+{% block css %}
   {% endblock %}
 
 <body>
@@ -63,7 +64,7 @@
           <li><a {% block active_events %} class="nav-link scrollto" {% endblock %} href="/events">Events</a></li>
           <li><a {% block active_workshop %} class="nav-link scrollto" {% endblock %} href="/workshop">Workshop</a></li>
           <li><a {% block active_sponsors %} class="nav-link scrollto" {% endblock %} href="/sponsors">Sponsors</a></li>
-          <a href="azeo_id" class="btn-get-started scrollto">Register Now </a>
+          <a href="azeo_id" {% block active_register %}  class="btn-get-started scrollto" {% endblock %} >Register Now </a>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
