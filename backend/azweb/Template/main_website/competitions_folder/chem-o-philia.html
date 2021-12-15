@@ -3,41 +3,86 @@
 {% load static %}
 {% block active_competitions %} class="nav-link scrollto active" {% endblock %}
 {% block css %}
-<style> 
-    .container1{
-        
+<style>
+    
+      
+      
+
+    .container1 {
+
         display: flex;
         flex-direction: row;
-        margin: 2% 10% ;
+        margin: 20% 20%;
         justify-content: space-between;
     }
 
 
-    .intro{
-         display:flex;
-         flex-direction: column;
-         width:50%;
-         border:rgb(192, 190, 190) solid 2px;
-         padding: 2% 5%;
-         border-radius: 4%;
-         box-shadow: 10px 5px 5px rgb(206, 201, 201);
-     }
-     .heading{
-         
-         margin-top: 5%;
-         
-     }
-     .intro h6{
-         text-align: center;
-     }
+    .intro {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        border: rgb(192, 190, 190) solid 2px;
+        padding: 2% 5%;
+        border-radius: 4%;
+        box-shadow: 10px 5px 5px rgb(206, 201, 201);
+    }
 
-     .rules{
-         display: flex;
-         flex-direction: column;
-         width: 40%;
-     }
- 
+    .heading {
 
+        margin-top: 5%;
+
+    }
+
+    .intro h6 {
+        text-align: center;
+    }
+
+    .rules {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 90%;
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-bottom: 5%;
+        border-top: solid grey;
+        border-bottom: solid grey;
+    }
+
+
+    .rules .scroll{
+        width: 45%;
+        border-right: grey solid;
+    }
+    .rules .scroll h4{
+        text-align: center;
+        font-weight: bold;
+        color: grey;
+        
+    }
+
+    .rules h4, .rules h6{
+        font-weight: bold;
+        color: grey;
+    }
+    .rules h6{
+        font-size: 1.5em;
+    }
+
+    .rules ul {
+        list-style: none;
+        height: 10em;
+        overflow-y: auto ;
+        overflow:scroll;
+    }
+
+    .rules ul i {
+        padding-right: 4px;
+        color: #fdc134;
+    }
+    .rules ul li{
+        padding-right: 4%;
+    }
 </style>
 
 
@@ -47,56 +92,57 @@
 
 <div class="section-title heading ">
     <h2 data-aos="fade-in">Chem-O-Philia</h2>
-      </div>
+</div>
 
 
-      <div class="row content">
-        <div class="col-md-5" data-aos="fade-right">
-          <img src="{% static 'assets/img/main_website_image/features-3.svg' %}" class="img-fluid" alt="">
-        </div>
-        <div class="col-md-7 pt-5" data-aos="fade-left">
-          <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-          <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
-          <ul>
+<div class="row content">
+    <div class="col-md-5" data-aos="fade-right">
+        <img src="{% static 'assets/img/main_website_image/features-3.svg' %}" class="img-fluid" alt="">
+    </div>
+    <div class="col-md-7 pt-5" data-aos="fade-left">
+        <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
+        <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia
+            voluptatem hic voluptas dolor doloremque.</p>
+        <div><a href="">Instructions</a></div>
+        <div><a href="">Portal Link</a></div>
+
+    </div>
+</div>
+
+
+<hr>
+
+
+
+<div class="rules contact" data-aos="fade-right">
+    <div class="col-md-7 scroll " data-aos="fade-left">
+        <h4 data-aos="fade-in">Rules</h4>
+        <ul>
             <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
             <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
             <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
-          </ul>
-        </div>
-      </div>
-
-<div class="container1">
-    <div class="intro col-lg-4 col-md-6" data-aos="fade-right">
-        
-        <p data-aos="fade-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum tempora voluptatibus iste beatae ullam id consequuntur perferendis nesciunt doloribus voluptate molestiae, veritatis laborum magnam error cupiditate voluptatum pariatur quasi dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem natus illo libero nemo sed facilis porro inventore quos quia, repudiandae rem aliquid, tenetur laudantium nostrum pariatur! Saepe facere deleniti iure! </p>
-
-        <div><a href="">Instructions</a></div>
-        <div><a href="">Register</a></div>
-    </div>
-    <div class="poster" data-aos="fade-left">
-        <img src="{% static 'assets/img/main_website_image/clients/client-1.png' %}" alt="">
-    </div>
-
-</div>
-
-<div class="rules contact" data-aos="fade-right">
-    <div>
-        <h4 data-aos="fade-in">Rules</h4>
-    <ol>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis tenetur officiis quidem accusantium iure repellat tempora aspernatur aperiam quo assumenda ipsam consequuntur consequatur quasi maiores qui, quisquam facere fugit!</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis tenetur officiis quidem accusantium iure repellat tempora aspernatur aperiam quo assumenda ipsam consequuntur consequatur quasi maiores qui, quisquam facere fugit!</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis tenetur officiis quidem accusantium iure repellat tempora aspernatur aperiam quo assumenda ipsam consequuntur consequatur quasi maiores qui, quisquam facere fugit!</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis tenetur officiis quidem accusantium iure repellat tempora aspernatur aperiam quo assumenda ipsam consequuntur consequatur quasi maiores qui, quisquam facere fugit!</li>
-    </ol>        
+            <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+            <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+            <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+            <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+            <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+            <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+        </ul>
     </div>
 
     <div>
         <h4 data-aos="fade-in">Contact</h4>
 
+        <h6>Pratiksha</h6>
+        <a href="">pratiksha.azeotropy@gmail.com</a> 
+        <p>+91 9999999999</p>
+
     </div>
 
 
+
 </div>
+<hr>
 
 
 

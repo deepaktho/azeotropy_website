@@ -17,11 +17,13 @@
     }
 
      .container_form{
-        width: 80%;
-        margin: 10% auto;
+        width: 97%;
+        margin: 10% 2% 5% 0.5%;
         margin-right: 0;
         display: flex;
         flex-direction: row;
+        box-shadow: 20px 20px 50px 15px grey;
+        border: grey 1px solid;
         
     } 
 
@@ -32,10 +34,11 @@
         width: 100%;
     }
     .image_form{
-        border: black solid;
+        
+        width: 80%;
     }
     .form_div{
-        border: solid black;
+        
         
     }
 
@@ -50,6 +53,11 @@
         color: #fff;
         background-color: #337ab7;
         border-color: #d9edf7;
+    }
+
+    .image_form img{
+        width:100%;
+        height: 100%;
     }
 
     .text-red {
@@ -85,6 +93,7 @@
         width: 30%;
     }
 
+    
     @media (min-width: 992px) {
         .col-md-8 {
             width: 99%;
@@ -116,7 +125,9 @@
     @media (max-width: 991px) {
         .image_form{
             display: none;
+            
         }
+        
 
         .clearfix {
             display: flex;
@@ -150,11 +161,12 @@
 
 {% block content %}
 <div class=" container_form">
-    <div class="image_form">
-        <img src="{% static 'assets/img/main_website_image/clients/client-1.png' %}" alt="">
+    <div class="image_form" data-aos="fade-right" >
+        <img src="{% static 'assets/img/main_website_image/registration/register2.jpeg' %}" alt="">
+        
     </div>
 
-<div class="form_div">
+<div class="form_div" data-aos="fade-left" >
     <form action="{% url 'registration_ca:azeo_id' %}" method="post">
         {% csrf_token %}
 
