@@ -72,7 +72,7 @@ body {
     z-index: 997;
     transition: all 0.5s;
     padding: 16px 0;
-    background: #213b52;
+    background: #0a84ef;
   }
   #header .logo h1 {
     font-size: 24px;
@@ -393,7 +393,7 @@ body {
     padding-bottom: 20px;
     position: relative;
     font-family: "Poppins", sans-serif;
-    color: #213b52;
+    color: #0d6efd;
   }
   .section-title h2::before {
     content: "";
@@ -486,16 +486,22 @@ body {
   /*--------------------------------------------------------------
   # About
   --------------------------------------------------------------*/
+  .black{
+    background: black;
+  }
+  
   .about .content {
     padding: 30px 0;
-  }
+    
+}
   .about .content h3 {
     font-weight: 700;
     font-size: 34px;
-    color: #213b52;
+    color: #0d6efd;
   }
   .about .content p {
     margin-bottom: 0;
+    color: white;
   }
   .about .content .icon-box {
     margin-top: 25px;
@@ -504,10 +510,10 @@ body {
     font-size: 20px;
     font-weight: 700;
     margin: 5px 0 10px 60px;
-    color: #213b52;
+    color: #0d6efd;
   }
   .about .content .icon-box h4 a {
-    color: #213b52;
+    color: #0d6efd;
     transition: 0.3s;
   }
   .about .content .icon-box h4 a:hover {
@@ -520,7 +526,7 @@ body {
   }
   .about .content .icon-box p {
     font-size: 15px;
-    color: #848484;
+    color: white;
     margin-left: 60px;
   }
   .about .image {
@@ -626,6 +632,8 @@ body {
   /*--------------------------------------------------------------
   # Portfolio
   --------------------------------------------------------------*/
+  
+  
   .portfolio .portfolio-item {
     margin-bottom: 30px;
   }
@@ -643,10 +651,14 @@ body {
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
-    color: #444444;
+    color: white;
     margin-bottom: 5px;
     transition: all 0.3s ease-in-out;
   }
+  .portfolio p{
+    color:white;
+  }
+
   .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
     color: #fdc134;
   }
@@ -1103,7 +1115,7 @@ body {
     position: relative;
     z-index: 2;
     text-align: center;
-    padding: 80px 0;
+    padding: 20px 0;
   }
   #footer .footer-top h3 {
     font-size: 36px;
@@ -1117,7 +1129,7 @@ body {
   #footer .footer-top p {
     font-size: 15;
     font-style: italic;
-    margin: 30px 0 0 0;
+    margin: 10px 0 0 0;
     padding: 0;
   }
   #footer .footer-top .footer-newsletter {

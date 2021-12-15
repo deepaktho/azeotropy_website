@@ -28,5 +28,6 @@ class Azeo_id_user(models.Model):
     state  = models.CharField(max_length=100)
     email = models.EmailField()
     pincode = models.IntegerField(null=True)
+    azeo_id = models.IntegerField(default=1)
     # user = models.OneToOneField(User, on_delete= models.CASCADE)
 

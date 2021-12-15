@@ -15,7 +15,8 @@ urlpatterns = [
     path('workshop',views.Workshop, name = 'workshop'),
     path('ca',views.Registration,name='index'),
     path('register', views.user_register, name = "register"),
-    path('azeo_id',views.AZeo_id, name='azeo_id')
+    path('azeo_id',views.AZeo_id, name='azeo_id'),
+    path('competitions/chem-o-philia', views.Chem_o_philia, name ='chem-o-philia'),
    
 ]
 

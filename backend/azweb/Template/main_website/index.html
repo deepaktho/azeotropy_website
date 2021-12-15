@@ -2,20 +2,22 @@
 
 {% load static %}
 
-{% block video %}
+{% block active_home %} class="nav-link scrollto active" {% endblock %}
+
+{% block css %}
   <style>
     #header{
-       background-color: transparent;  
+       opacity: 60%;
       }
     
     .navbar a, .navbar a:focus {
      
-      color: #33c319;
+      color: #f8faf8;
       
   }
 
   .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-    color: #189808;
+    
     font-weight: bolder;
 }
 
@@ -122,10 +124,10 @@ height: 100%;}
     </section><!-- End Clients Section -->
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about section-bg">
-      <div class="container">
+    <section id="about" class="about section-bg black">
+      <div class="container ">
 
-        <div class="row">
+        <div class="row ">
           <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start">
             <video muted width="100%" height="100%" controls autoplay> <source src="{% static 'assets/img/azeo_2021.mp4' %}" type="video/mp4">
           </div>
@@ -212,7 +214,7 @@ height: 100%;}
     </section><!-- End Features Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
+    <section id="portfolio" class="portfolio section-bg black">
       <div class="container">
 
         <div class="section-title">
@@ -220,7 +222,7 @@ height: 100%;}
           <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-lg-12">
             <ul id="portfolio-flters">
               <ul id="portfolio-flters">
@@ -231,25 +233,26 @@ height: 100%;}
               <li data-filter=".filter-web">Competitions</li>
             </ul>
           </div>
-        </div>
+        </div> -->
 
         <div class="row portfolio-container" data-aos="fade-up">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
+              <h4>Events</h4>
               <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="{% static 'assets/img/main_website_image/portfolio/portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                <a href="events" title="More Details"><i class="bi bi-link"></i></a>
               </div>
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
+                <h4>Events</h4>
+                <!-- <p>App</p> -->
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
@@ -261,9 +264,9 @@ height: 100%;}
                 <p>Web</p>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-3.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
@@ -275,23 +278,24 @@ height: 100%;}
                 <p>App</p>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
+              <h4>Competitions</h4>
               <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                <a href="competitions" title="More Details"><i class="bi bi-link"></i></a>
               </div>
               <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
+                <h4>Competitions</h4>
+                <!-- <p>Card</p> -->
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-5.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
@@ -331,23 +335,25 @@ height: 100%;}
                 <p>Card</p>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
+              <h4>Workshops</h4>
+
               <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-8.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="{% static 'assets/img/main_website_image/portfolio/portfolio-8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                <a href="workshop" title="More Details"><i class="bi bi-link"></i></a>
               </div>
               <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
+                <h4>Workshops</h4>
+                
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-9.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
@@ -359,7 +365,7 @@ height: 100%;}
                 <p>Web</p>
               </div>
             </div>
-          </div>
+          </div> -->
 
         </div>
 

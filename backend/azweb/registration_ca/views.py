@@ -30,12 +30,15 @@ def Competition(request):
     return render(request, 'main_website/competitions.html')
 
 def Workshop(request):
-    return render(request, 'main_website/competitions.html')
+    return render(request, 'main_website/workshop.html')
+
+def Chem_o_philia(request):
+    return render(request, 'main_website/competitions_folder/chem-o-philia.html')
 
 
 def Registration(request):
 
-        return render(request, 'ca_portal/ca.html')
+        return render(request,'ca_portal/ca.html')
 
 def user_register(request):
     # if this is a POST request we need to process the form data
@@ -76,6 +79,7 @@ def user_register(request):
                 extendeduser.state = form.cleaned_data['state']
                 extendeduser.email = form.cleaned_data['email']
                 extendeduser.pincode = form.cleaned_data['pincode']
+                
                 # extendeduser.user = user
                 extendeduser.save()
 
@@ -159,8 +163,11 @@ def AZeo_id(request):
                     extendeduser.state = form.cleaned_data['state']
                     extendeduser.email = form.cleaned_data['email']
                     extendeduser.pincode = form.cleaned_data['pincode']
+                    extendeduser.azeo_id = Azeo_id_user.objects.only('id').last().id+1
                     # extendeduser.user = user
                     extendeduser.save()
+
+                    
 
                     Azeo_no = Azeo_id_user.objects.only('id').last().id
 
@@ -187,7 +194,7 @@ def AZeo_id(request):
                     #             [to_email],
                     #             fail_silently=False,
                     #         )
-                    extendeduser.save()
+                    # extendeduser.save()
                     message = 'You have successfully registered on CA portal'
                     return render(request, "main_website/confirmation_page.html",{'AZeo_ID':Azeo_no})
 

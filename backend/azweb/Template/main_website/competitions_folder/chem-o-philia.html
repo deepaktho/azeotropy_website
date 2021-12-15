@@ -1,0 +1,82 @@
+{% extends 'main_website/header.html' %}
+
+{% load static %}
+{% block active_competitions %} class="nav-link scrollto active" {% endblock %}
+{% block css %}
+<style> 
+    .container1{
+        
+        display: flex;
+        flex-direction: row;
+        margin: 2% 10% ;
+        justify-content: space-between;
+    }
+
+
+    .intro{
+         display:flex;
+         flex-direction: column;
+         width:50%;
+         border:rgb(192, 190, 190) solid 2px;
+         padding: 2% 5%;
+         border-radius: 4%;
+         box-shadow: 10px 5px 5px rgb(206, 201, 201);
+     }
+     h4{
+         font-size: 3em;
+         margin-top: 5%;
+         color: black;
+         text-align: center;
+     }
+     .intro h6{
+         text-align: center;
+     }
+
+     .rules{
+         display: flex;
+         flex-direction: column;
+         width: 40%;
+     }
+ 
+
+</style>
+
+
+{% endblock %}
+
+{% block content %}
+<div><h4>Chem-O-Philia</h4></div>
+<div class="container1">
+    <div class="intro">
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum tempora voluptatibus iste beatae ullam id consequuntur perferendis nesciunt doloribus voluptate molestiae, veritatis laborum magnam error cupiditate voluptatum pariatur quasi dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem natus illo libero nemo sed facilis porro inventore quos quia, repudiandae rem aliquid, tenetur laudantium nostrum pariatur! Saepe facere deleniti iure! </p>
+
+        <div><a href="">Instructions</a></div>
+        <div><a href="">Register</a></div>
+    </div>
+    <div class="poster">
+        <img src="{% static 'assets/img/main_website_image/clients/client-1.png' %}" alt="">
+    </div>
+
+</div>
+
+<div class="rules contact">
+    <div>
+        <h4>Rules</h4>
+    <ol>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis tenetur officiis quidem accusantium iure repellat tempora aspernatur aperiam quo assumenda ipsam consequuntur consequatur quasi maiores qui, quisquam facere fugit!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis tenetur officiis quidem accusantium iure repellat tempora aspernatur aperiam quo assumenda ipsam consequuntur consequatur quasi maiores qui, quisquam facere fugit!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis tenetur officiis quidem accusantium iure repellat tempora aspernatur aperiam quo assumenda ipsam consequuntur consequatur quasi maiores qui, quisquam facere fugit!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis tenetur officiis quidem accusantium iure repellat tempora aspernatur aperiam quo assumenda ipsam consequuntur consequatur quasi maiores qui, quisquam facere fugit!</li>
+    </ol>        
+    </div>
+
+    <div>
+        <h4>Contact</h4>
+
+    </div>
+
+
+</div>
+
+{% endblock %}

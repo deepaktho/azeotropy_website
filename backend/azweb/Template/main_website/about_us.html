@@ -1,11 +1,378 @@
 {% extends 'main_website/header.html' %}
 {% load static %}
 
+{% block active_about_us %} class="nav-link scrollto active" {% endblock %}
+
+
+{% block css %}
+  <style>
+  
+    .team{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .filter-card{
+      width: 15%;
+    }
+
+    .compe{
+      margin-right: 10%;
+    }
+
+    .marki{
+      margin-right: 10%;
+    }
+
+    .web{
+      margin-right: 10%;
+    }
+
+  </style> 
+
+
+  {% endblock %}
+
+
 {% block content %}
 
 <!-- write content inside the block -->
+ 
+ 
+
+        <section id="portfolio" class="portfolio section-bg ">
+            <div class="container">
+      
+              <!-- <div class="section-title">
+                <h2 data-aos="fade-in">Portfolio</h2>
+                <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+              </div> -->
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Team</h2>
+          <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class=" team " data-aos="fade-up">
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                  <!-- <h4>Competitions</h4> -->
+                  <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+                  <!-- <div class="portfolio-links">
+                    <a href="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                    <a href="competitions" title="More Details"><i class="bi bi-link"></i></a>
+                  </div> -->
+                  <div class="portfolio-info">
+                    <h4>Competitions</h4>
+                    <span>Chief Executive Officer</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+                    <!-- <p>Card</p> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                  <!-- <h4>Competitions</h4> -->
+                  <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+                  <!-- <div class="portfolio-links">
+                    <a href="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                    <a href="competitions" title="More Details"><i class="bi bi-link"></i></a>
+                  </div> -->
+                  <div class="portfolio-info">
+                    <h4>Competitions</h4>
+                    <span>Chief Executive Officer</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+                    <!-- <p>Card</p> -->
+                  </div>
+                </div>
+              </div>
+
+              
+
+        </div>
 
 
+
+        <div class=" team " data-aos="fade-up">
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <!-- <h4>Competitions</h4> -->
+                <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+                <!-- <div class="portfolio-links">
+                  <a href="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                  <a href="competitions" title="More Details"><i class="bi bi-link"></i></a>
+                </div> -->
+                <div class="portfolio-info">
+                  <h4>Competitions</h4>
+                  <span>Chief Executive Officer</span>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+                  <!-- <p>Card</p> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <!-- <h4>Competitions</h4> -->
+                <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+                <!-- <div class="portfolio-links">
+                  <a href="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                  <a href="competitions" title="More Details"><i class="bi bi-link"></i></a>
+                </div> -->
+                <div class="portfolio-info">
+                  <h4>Competitions</h4>
+                  <span>Chief Executive Officer</span>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+                  <!-- <p>Card</p> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card compe">
+              <div class="portfolio-wrap">
+                <!-- <h4>Competitions</h4> -->
+                <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+                <!-- <div class="portfolio-links">
+                  <a href="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                  <a href="competitions" title="More Details"><i class="bi bi-link"></i></a>
+                </div> -->
+                <div class="portfolio-info">
+                  <h4>Competitions</h4>
+                  <span>Chief Executive Officer</span>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+                  <!-- <p>Card</p> -->
+                </div>
+              </div>
+            </div>
+
+          
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <!-- <h4>Competitions</h4> -->
+                <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+                <!-- <div class="portfolio-links">
+                  <a href="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                  <a href="competitions" title="More Details"><i class="bi bi-link"></i></a>
+                </div> -->
+                <div class="portfolio-info">
+                  <h4>Competitions</h4>
+                  <span>Chief Executive Officer</span>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+                  <!-- <p>Card</p> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <!-- <h4>Competitions</h4> -->
+                <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+                <!-- <div class="portfolio-links">
+                  <a href="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                  <a href="competitions" title="More Details"><i class="bi bi-link"></i></a>
+                </div> -->
+                <div class="portfolio-info">
+                  <h4>Competitions</h4>
+                  <span>Chief Executive Officer</span>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+                  <!-- <p>Card</p> -->
+                </div>
+              </div>
+            </div>
+
+            </div>
+
+            <div class=" team " data-aos="fade-up">
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                  <div class="portfolio-wrap">
+                    <!-- <h4>Competitions</h4> -->
+                    <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+                    <!-- <div class="portfolio-links">
+                      <a href="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                      <a href="competitions" title="More Details"><i class="bi bi-link"></i></a>
+                    </div> -->
+                    <div class="portfolio-info">
+                      <h4>Competitions</h4>
+                      <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+                      <!-- <p>Card</p> -->
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card marki">
+                  <div class="portfolio-wrap">
+                    <!-- <h4>Competitions</h4> -->
+                    <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+                    <!-- <div class="portfolio-links">
+                      <a href="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                      <a href="competitions" title="More Details"><i class="bi bi-link"></i></a>
+                    </div> -->
+                    <div class="portfolio-info">
+                      <h4>Competitions</h4>
+                      <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+                      <!-- <p>Card</p> -->
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- web -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card ">
+                  <div class="portfolio-wrap">
+                    <!-- <h4>Competitions</h4> -->
+                    <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+                    <!-- <div class="portfolio-links">
+                      <a href="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                      <a href="competitions" title="More Details"><i class="bi bi-link"></i></a>
+                    </div> -->
+                    <div class="portfolio-info">
+                      <h4>Competitions</h4>
+                      <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+                      <!-- <p>Card</p> -->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card web">
+                  <div class="portfolio-wrap">
+                    <!-- <h4>Competitions</h4> -->
+                    <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+                    <!-- <div class="portfolio-links">
+                      <a href="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                      <a href="competitions" title="More Details"><i class="bi bi-link"></i></a>
+                    </div> -->
+                    <div class="portfolio-info">
+                      <h4>Competitions</h4>
+                      <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+                      <!-- <p>Card</p> -->
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- pr -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                  <div class="portfolio-wrap">
+                    <!-- <h4>Competitions</h4> -->
+                    <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+                    <!-- <div class="portfolio-links">
+                      <a href="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                      <a href="competitions" title="More Details"><i class="bi bi-link"></i></a>
+                    </div> -->
+                    <div class="portfolio-info">
+                      <h4>Competitions</h4>
+                      <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+                      <!-- <p>Card</p> -->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                  <div class="portfolio-wrap">
+                    <!-- <h4>Competitions</h4> -->
+                    <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+                    <!-- <div class="portfolio-links">
+                      <a href="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                      <a href="competitions" title="More Details"><i class="bi bi-link"></i></a>
+                    </div> -->
+                    <div class="portfolio-info">
+                      <h4>Competitions</h4>
+                      <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+                      <!-- <p>Card</p> -->
+                    </div>
+                  </div>
+                </div>
+  
+                
+  
+          </div>
+
+            
+
+      
+        
+    </section>
+    <!-- End Team Section -->
 
 
 {% endblock %}
