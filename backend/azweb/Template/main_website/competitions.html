@@ -1,30 +1,103 @@
 {% extends 'main_website/header.html' %}
 {% load static %}
 {% block active_competitions %} class="nav-link scrollto active" {% endblock %}
+{% block css%}
+<style>
+@media (min-width: 768px){
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 30%;
+}
+}
+
+.services .card-img img {
+  
+  max-width: 100%;
+  transition: all 0.3s ease-in-out;
+  margin: 1%;
+  padding: 4%;
+}
+
+.services .card-body {
+  z-index: 10;
+  background: #fff;
+  border-top: 4px solid #fff;
+  padding: 30px;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+  margin-top: -1px;
+  transition: 0.3s;
+}
+
+ .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+}
+ .portfolio-wrap {
+  margin-top: -10%;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  z-index: 1;
+}
+.portfolio .portfolio-wrap .portfolio-info {
+  top:45%;
+}
+.explore{
+  background-color: rgb(43, 65, 22);
+  text-align: center;
+  font-size: xx-large;
+}
+.portfolio .portfolio-wrap::before {
+  background: rgba(33, 59, 82, 0.8);
+}
+
+</style>
+{%endblock%}
 {% block content %}
  <br>
  <br>
+ 
+
+ 
+
+    
+
     <section id="services" class="services section-bg">
         <div class="container">
-  
+
+          
           <div class="section-title">
             <h2 data-aos="fade-in">Competitions</h2>
-            <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <!-- <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
           </div>
   
-          <div class="row ">
-            <div class="col-md-6 d-flex align-items-stretch  " data-aos="fade-right">
-              <div class="card">
-                <div class="card-img">
-                  <img src="{% static 'assets/img/main_website_image/services-1.jpg' %}" alt="...">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title"><a href="">Chem-O-Philia</a></h5>
-                  <p class="card-text">A national-level quiz that encompasses everything in chemical engineering.</p>
-                  <div class="read-more"><a href="competitions/chem-o-philia"><i class="bi bi-arrow-right"></i> Read More</a></div>
-                </div>
-              </div>
+          
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card portfolio">
+            <div class="portfolio-wrap">
+              <h4>Chem-E-Cross</h4>
+              <img src="{% static 'assets/img/main_website_image/chem-e-cross_poster.jpeg' %}" class="img-fluid" alt="">
+              
+              <div class="portfolio-info">
+                
+                <h4>Chem-E-Cross</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia suscipit natus, corporis enim nostrum recusandae sint laboriosam. Alias, quaerat numquam officiis sit odit maxime! Doloremque obcaecati consectetur pariatur quidem tempore.</p>
+          
             </div>
+            
+          </div>
+          <div class="explore">
+          <a href="competitions/chem-o-philia">Explore</a>
+          </div>
+  
+
             <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
               <div class="card">
                 <div class="card-img">
