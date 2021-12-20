@@ -169,7 +169,7 @@ def AZeo_id(request):
 
                     
 
-                    Azeo_no = Azeo_id_user.objects.only('id').last().id
+                    Azeo_no =f"AZ-{extendeduser.first_name[:3]}-{Azeo_id_user.objects.only('id').last().id}" 
 
                     subject = "Successfully registered for AZeotropy Campus Ambassador "
                     # message = f'congratulations {extendeduser.first_name}{extendeduser.last_name} have successfully registered on CA portal'
