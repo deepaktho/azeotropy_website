@@ -84,10 +84,40 @@
         padding-right: 4%;
     }
 
+    .img-fluid {
+        max-width: 70%;
+        height: auto;
+        margin-left: 10%;
+    }
+
+    #about_p{
+        font-size: x-large;
+    }
+
+    .instruction{
+        display: inline;
+        border: blue solid;
+        padding: 1%;
+        margin: 5% 0;
+    }
+
+    .portal_link{
+        display: inline;
+        border: blue solid;
+        padding: 1%;
+        margin: 5% 0;
+    }
+
     @media (max-width: 768px) {
         .heading {
           margin-top: 15%;
       }
+
+      .img-fluid {
+        max-width: 100%;
+        height: auto;
+        
+    }
     }
 
 </style>
@@ -98,20 +128,19 @@
 {% block content %}
 
 <div class="section-title heading ">
-    <h2 data-aos="fade-in">Chem-O-Philia</h2>
+    <h2 data-aos="fade-in">Chem-E-Cross</h2>
 </div>
 
 
 <div class="row content">
     <div class="col-md-5" data-aos="fade-right">
-        <img src="{% static 'assets/img/main_website_image/features-3.svg' %}" class="img-fluid" alt="">
+        <img src="{% static 'assets/img/main_website_image/chem-e-cross-2.jpeg' %}" class="img-fluid" alt="">
     </div>
     <div class="col-md-7 pt-5" data-aos="fade-left">
-        <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-        <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia
-            voluptatem hic voluptas dolor doloremque.</p>
-        <div><a href="">Instructions</a></div>
-        <div><a href="">Portal Link</a></div>
+        <!-- <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3> -->
+        <p id="about_p"> Every one of us might have solved a crossword in a newspaper or on the back of a book when we got bored. This time, we introduce a crossword filled with the fuzzy reactors and shiny catalyst over it, which reacts with multiple reactants to give a final product crossword puzzler.</p>
+        <div class="instruction"><a href="https://drive.google.com/file/d/1E3Yql6qtL1UdwJ020dgGqLHM2GWhIZZE/view?usp=sharing" target="_blank" >Problem Statement</a></div>
+        <div class="portal_link"><a href="">Portal Link</a></div>
 
     </div>
 </div>
@@ -123,26 +152,35 @@
 
 <div class="rules contact" data-aos="fade-right">
     <div class="col-md-7 scroll " data-aos="fade-left">
-        <h4 data-aos="fade-in">Rules</h4>
+        <h4 data-aos="fade-in">Structure</h4>
         <ul>
-            <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-            <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+            <li><i class="bi bi-check"></i>Chem-E-Cross will be a four-crossword puzzle series with one crossword each
+                released in October, November, December, and January.</li>
+            <li><i class="bi bi-check"></i> This is an individual participation competition.</li>
+            <li><i class="bi bi-check"></i> Undergraduate college students from any engineering background can
+                participate in this competition.</li>
+            <li><i class="bi bi-check"></i> The crossword portal link will be shared on the contest day through our
+                social media handles, listed below. o Facebook: 
+                <ul>
+                    <li><a href="https://www.facebook.com/AZeotropy">https://www.facebook.com/AZeotropy</a></li>
+                    <li><a href="https://www.instagram.com/iitbombay_azeotropy/">https://www.instagram.com/iitbombay_azeotropy/</a></li>
+                </ul>
+            </li>
+            <!-- <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
             <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
             <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
             <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-            <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
-            <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-            <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-            <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+            <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li> -->
         </ul>
     </div>
 
     <div>
         <h4 data-aos="fade-in">Contact</h4>
 
-        <h6>Pratiksha</h6>
-        <a href="">pratiksha.azeotropy@gmail.com</a> 
-        <p>+91 9999999999</p>
+        <h6>Harsh Baldawa</h6>
+        <p> Competitions Manager, AZeotropy</p>
+        <p>Mob: +91-8412036000</a></p> 
+        <p>Email: harsh.azeotropy@gmail.com</p>
 
     </div>
 

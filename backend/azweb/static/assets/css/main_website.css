@@ -73,8 +73,10 @@ body {
     transition: all 0.5s;
     padding: 16px 0;
     background: #ffffff;
+    background-image: url("{% static 'assets/img/main_website_image/masterpiece.png' %}");
+    
   }
-  #header .logo h1 {
+  /* #header .logo h1 {
     font-size: 24px;
     margin: 0;
     padding: 10px 0;
@@ -83,7 +85,7 @@ body {
     letter-spacing: 3px;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
-  }
+  } */
   #header .logo h1 a, #header .logo h1 a:hover {
     color: #fff;
     text-decoration: none;
@@ -92,13 +94,39 @@ body {
     color: #fdc134;
   }
   #header .logo img {
-    border: black solid;
+    
     border-radius: 5%;
-    background-color: black;
+    
     padding: 0 0 0 15%;
     margin: 0;
     max-height: 40px;
   }
+
+
+  .logo{
+    display: flex;
+    justify-content: center;
+
+
+  }
+    .logo  .logo_image{
+      
+      margin-right: 3%;
+    }
+    .logo .logo_name{
+      
+      margin-left: 3%;
+      
+    }
+
+    .logo .logo_name h1{
+      
+      letter-spacing: normal;
+      padding: 0%;
+      bottom: 0;
+    }
+
+
   
   /*--------------------------------------------------------------
   # Navigation Menu
@@ -115,29 +143,32 @@ body {
     display: flex;
     list-style: none;
     align-items: center;
+    
   }
 
   #register_button{
-    width: 100%;
+    width: 85%;
     padding: 30%;
-    margin-left: 10%;
-    padding: 0 ;
+    margin-left: 30px;
+    padding: 2%;
     border :rgb(0, 0, 0) solid;
     border-radius: 5%;
     background-color: black;
     color: white;
+    text-align: center;
 
   }
 
   .navbar li {
     position: relative;
+    
   }
   .navbar a, .navbar a:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 0 10px 30px;
-    font-size: 14px;
+    font-size: 18px;
     color: #0c0c0c;
     white-space: nowrap;
     transition: 0.3s;

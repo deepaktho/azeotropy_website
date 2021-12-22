@@ -163,13 +163,14 @@ def AZeo_id(request):
                     extendeduser.state = form.cleaned_data['state']
                     extendeduser.email = form.cleaned_data['email']
                     extendeduser.pincode = form.cleaned_data['pincode']
-                    extendeduser.azeo_id = Azeo_id_user.objects.only('id').last().id+1
+                    Azeo_no =f"AZ-{extendeduser.first_name[:3]}-{Azeo_id_user.objects.only('id').last().id+1}" 
+                    extendeduser.azeo_id = Azeo_no
                     # extendeduser.user = user
                     extendeduser.save()
 
                     
 
-                    Azeo_no =f"AZ-{extendeduser.first_name[:3]}-{Azeo_id_user.objects.only('id').last().id}" 
+                    
 
                     subject = "Successfully registered for AZeotropy Campus Ambassador "
                     # message = f'congratulations {extendeduser.first_name}{extendeduser.last_name} have successfully registered on CA portal'
