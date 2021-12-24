@@ -72,9 +72,11 @@ body {
     z-index: 997;
     transition: all 0.5s;
     padding: 16px 0;
-    background: #0a84ef;
+    background: #ffffff;
+    background-image: url("{% static 'assets/img/main_website_image/masterpiece.png' %}");
+    
   }
-  #header .logo h1 {
+  /* #header .logo h1 {
     font-size: 24px;
     margin: 0;
     padding: 10px 0;
@@ -83,7 +85,7 @@ body {
     letter-spacing: 3px;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
-  }
+  } */
   #header .logo h1 a, #header .logo h1 a:hover {
     color: #fff;
     text-decoration: none;
@@ -92,13 +94,42 @@ body {
     color: #fdc134;
   }
   #header .logo img {
-    border: black solid;
+    
     border-radius: 5%;
     
     padding: 0 0 0 15%;
     margin: 0;
     max-height: 40px;
   }
+
+
+  .logo{
+    display: flex;
+    justify-content: center;
+
+
+  }
+    .logo  .logo_image{
+      
+      margin-right: 3%;
+    }
+    .logo .logo_name{
+      
+      margin-left: 3%;
+      
+    }
+
+    .logo .logo_name h1{
+      
+      letter-spacing: normal;
+      padding: 0%;
+      bottom: 0;
+      color: black;
+      font-weight: bold;
+
+    }
+
+
   
   /*--------------------------------------------------------------
   # Navigation Menu
@@ -1218,6 +1249,12 @@ body {
     z-index: 2;
     text-align: center;
     padding: 20px 0;
+  }
+
+  .footer-content{
+    display: flex;
+    justify-content: space-around;
+    
   }
   #footer .footer-top h3 {
     font-size: 36px;

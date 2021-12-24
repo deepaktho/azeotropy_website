@@ -3,7 +3,7 @@
 {% block active_register %} class="nav-link scrollto active " {% endblock %}
 
 {% block css_file %}
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 <link href="{% static 'assets/css/main_website.css' %}" rel="stylesheet">
 {% endblock %}
 <!-- background: url("{% static 'assets/img/bgimage3.jpeg' %}");  -->
@@ -16,15 +16,7 @@
         overflow-x: hidden;
     }
 
-    #header .container{
-        
-            width: 100%;
-            padding-right: var(--bs-gutter-x,.75rem);
-            padding-left: var(--bs-gutter-x,.75rem);
-            margin-right: auto;
-            margin-left: auto;
-        }
-    #header 
+    
     
 
 
@@ -59,10 +51,7 @@
         
         width: 80%;
     }
-    .form_div{
-        
-        
-    }
+
 
     .panel-default {
         border-color: #ddd;
@@ -107,13 +96,34 @@
         display: flex;
         flex-direction: row;
         flex-flow: row wrap;
+        margin: 0;
+        justify-content: space-around;
+        padding-top: 2%;
     }
 
     .clearfix {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 40%;
+        margin-bottom: 10px;
+        
+        
+        
     }
+
+    .text-right{
+        text-align: left;
+    }
+    #header .container::before{
+        content: none;
+    }
+
+    .submit{
+        margin: 3% 0;
+        text-align: center;
+    }
+
+
 
     
     @media (min-width: 992px) {
@@ -136,13 +146,7 @@
 }
     }
 
-    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        width: 100%;
-        padding-right: var(--bs-gutter-x,.75rem);
-        padding-left: var(--bs-gutter-x,.75rem);
-        margin-right: auto;
-        margin-left: auto;
-    }
+    
 
     @media (max-width: 991px) {
         .image_form{
@@ -211,14 +215,14 @@
 
                     <div class="form-group clearfix">
                         <label for="{{ form.first_name.id_for_label }}" class="col-md-4 control-label text-right">First
-                            Name<span class="text-red">*</span>:</label>
+                            Name:</label>
                         <div class="col-md-6">
                             {{ form.first_name }}
                         </div>
                     </div>
                     <div class="form-group clearfix">
                         <label for="{{ form.last_name.id_for_label }}" class="col-md-4 control-label text-right">Last
-                            Name<span class="text-red">*</span>:</label>
+                            Name:</label>
                         <div class="col-md-6">
                             {{ form.last_name }}
                         </div>
@@ -226,8 +230,7 @@
 
 
                     <div class="form-group clearfix">
-                        <label for="{{ form.email.id_for_label }}" class="col-md-4 control-label text-right">Email<span
-                                class="text-red">*</span>:</label>
+                        <label for="{{ form.email.id_for_label }}" class="col-md-4 control-label text-right">Email:</label>
                         <div class="col-md-6">
                             {{ form.email }}
                             *Preferably Gmail
@@ -237,8 +240,7 @@
 
                     <div class="form-group clearfix">
                         <label for="{{ form.phone_number.id_for_label }}"
-                            class="col-md-4 control-label text-right">Phone Number<span
-                                class="text-red">*</span>:</label>
+                            class="col-md-4 control-label text-right">Phone Number:</label>
                         <div class="col-md-6">
                             {{ form.phone_number }}
                             <p>* Preferably give whatsapp number</p>
@@ -254,38 +256,35 @@
                     </div>
                     <div class="form-group clearfix">
                         <label for="{{ form.college.id_for_label }}"
-                            class="col-md-4 control-label text-right">College/University<span
-                                class="text-red">*</span>:</label>
+                            class="col-md-4 control-label text-right">College/University:</label>
                         <div class="col-md-6">
                             {{ form.college }}
                         </div>
                     </div>
                     <div class="form-group clearfix">
                         <label for="{{ form.current_year.id_for_label }}"
-                            class="col-md-4 control-label text-right">Current year of study<span
-                                class="text-red">*</span>:</label>
+                            class="col-md-4 control-label text-right">Current year of study:</label>
                         <div class="col-md-6">
                             {{ form.current_year }}
                         </div>
                     </div>
                     <div class="form-group clearfix">
                         <label for="{{ form.permanent_address.id_for_label }}"
-                            class="col-md-4 control-label text-right">Permanent address<span
-                                class="text-red">*</span>:</label>
+                            class="col-md-4 control-label text-right">Permanent address
+                                :</label>
                         <div class="col-md-6">
                             {{ form.permanent_address }}
                         </div>
                     </div>
                     <div class="form-group clearfix">
                         <label for="{{ form.current_year.id_for_label }}"
-                            class="col-md-4 control-label text-right">Pincode<span class="text-red">*</span>:</label>
+                            class="col-md-4 control-label text-right">Pincode:</label>
                         <div class="col-md-6">
                             {{ form.pincode }}
                         </div>
                     </div>
                     <div class="form-group clearfix">
-                        <label for="{{ form.state.id_for_label }}" class="col-md-4 control-label text-right">State<span
-                                class="text-red">*</span>:</label>
+                        <label for="{{ form.state.id_for_label }}" class="col-md-4 control-label text-right">State:</label>
                         <div class="col-md-6">
                             {{ form.state }}
                         </div>
