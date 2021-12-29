@@ -17,6 +17,7 @@ urlpatterns = [
     path('register', views.user_register, name = "register"),
     path('azeo_id',views.AZeo_id, name='azeo_id'),
     path('competitions/chem-o-philia', views.Chem_o_philia, name ='chem-o-philia'),
+    path('competitions/chem-e-cross', views.Chem_e_cross, name ='chem-e-cross'),
    
 ]
 

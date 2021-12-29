@@ -35,6 +35,9 @@ def Workshop(request):
 def Chem_o_philia(request):
     return render(request, 'main_website/competitions_folder/chem-o-philia.html')
 
+def Chem_e_cross(request):
+    return render(request, 'main_website/competitions_folder/chem-e-cross.html')
+
 
 def Registration(request):
 
