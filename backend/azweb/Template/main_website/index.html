@@ -30,10 +30,122 @@
     font-weight: bolder;
 }
 
+.about{
+  display: flex;
+}
+
+.about1{
+  display: flex;
+  justify-content: space-around;
+}
+
+.about2{
+  border: solid 2px black;
+  width: 60%;
+  margin-left: -50px;
+
+
+}
+
+.custom-btn {
+  margin-top: 10px;
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.btn-12{
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  border:none;
+  box-shadow: none;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+}
+.btn-12 a {
+  color: white;
+  background: #5BBC2E;
+background: linear-gradient(0deg, #5BBC2E 0%, #5BBC2E 100%);
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  border-radius: 5px;
+  margin:0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.btn-12 a:nth-child(1) {
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12 a:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12:hover a:nth-child(1) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.btn-12:hover a:nth-child(2) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+ color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+.portfolio-wrap h4{
+  color:white;
+}
+
 
     /* video */
 #videoDiv { height: auto; position: relative; margin-top: 4.5%;}
-#video1 { width: 100%;}
+.about video {  margin-left: 10%;}
 #videoMessage { position: absolute; top: 0; left: 10%;
 display: flex;
 flex-direction: column; 
@@ -77,7 +189,7 @@ height: 100%;}
   <!-- <section id="hero"> -->
 
     <div id="videoDiv"> 
-      <video id="video1" preload="" autoplay="" muted="" playsinline="" loop="" >
+      <video id="video1" width="100%" preload="" autoplay="" muted="" playsinline="" loop="" >
       <source src="{% static 'assets/img/main_website_image/frontpage_video.mp4' %}" type="">
       </video> 
       <div id="videoMessage" class="styling">
@@ -159,20 +271,20 @@ height: 100%;}
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about section-bg black">
-      <div class="container ">
-
-        <div class="row ">
-          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start">
-            <video muted width="100%" height="100%"  autoplay> <source src="{% static 'assets/img/azeo_2021.mp4' %}" type="video/mp4">
-          </div>
-          <div class="col-xl-7 pl-0 pl-lg-5 pr-lg-1 d-flex align-items-stretch">
-            <div class="content d-flex flex-column justify-content-center">
-              <h3 data-aos="fade-in" data-aos-delay="100"> <a href="/about_us">About AZeotropy</a></h3>
+      <video  width="50%"   preload="" autoplay="" muted="" playsinline="" loop=""> <source src="{% static 'assets/img/azeo_2021.mp4' %}" type="video/mp4"></video>
+          
+      <div class="container about1 ">
+          
+            
+               
+            <div class="content d-flex flex-column justify-content-center about2">
+              <h3 data-aos="fade-in" data-aos-delay="100" > <a href="/about_us">About AZeotropy</a></h3>
               <p data-aos="fade-in">
-                AZeotropy is an interesting blend of various intriguing competitions, lecture series, panel discussions, exhibitions, workshops, and many fun-with-learning events. for more details
-                <a class="cta-btn" href="https://azeotropyiitbblog.wordpress.com/about-the-symposium/"
-                target="_blank">Click here</a></p>
-              <div class="row">
+                AZeotropy is an interesting blend of various intriguing competitions, lecture series, panel discussions, exhibitions, workshops, and many fun-with-learning events. 
+                <button class="custom-btn btn-12"> <a href="/about_us">Read More</a> <a href="/about_us">Read More</a></button>
+
+              
+              <!-- <div class="row">
                 <div class="col-md-6 icon-box" data-aos="fade-up">
                   <i class="bx bx-receipt"></i>
                   <h4><a href="#">Corporis voluptates sit</a></h4>
@@ -193,17 +305,19 @@ height: 100%;}
                   <h4><a href="#">Beatae veritatis</a></h4>
                   <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
                 </div>
-              </div>
-            </div><!-- End .content-->
-          </div>
-        </div>
+              </div>--->
+            </div>
+             <!-- End .content  -->
+          
+        
+        
 
       </div>
     </section><!-- End About Section -->
 
     <!-- ======= Features Section ======= -->
     <section id="features" class="features section-bg">
-      <div class="container">
+      <div class="container ">
 
         <div class="section-title">
           <h2 data-aos="fade-in">Features</h2>
@@ -251,10 +365,7 @@ height: 100%;}
     <section id="portfolio" class="portfolio section-bg black">
       <div class="container">
 
-        <div class="section-title">
-          <h2 data-aos="fade-in">Portfolio</h2>
-          <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
+        
 
         <!-- <div class="row">
           <div class="col-lg-12">
@@ -531,73 +642,7 @@ height: 100%;}
 <!-- End Frequently Asked Questions Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-6">
-
-            <div class="row">
-              <div class="col-md-12">
-                <div class="info-box" data-aos="fade-up">
-                  <i class="bx bx-map"></i>
-                  <h3>Our Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
-                  <i class="bx bx-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p>info@example.com<br>contact@example.com</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
-                  <i class="bx bx-phone-call"></i>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6 mt-4 mt-lg-0">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form w-100" data-aos="fade-up">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
+    <!-- End Contact Section -->
 
   </main><!-- End #main -->
 

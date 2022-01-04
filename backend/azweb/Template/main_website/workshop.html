@@ -1,6 +1,22 @@
 {% extends 'main_website/header.html' %}
 {% load static %}
 {% block active_workshop %} class="nav-link scrollto active" {% endblock %}
+
+{% block css%}
+<style>
+
+  .services .row{
+    justify-content: space-around;
+  }
+@media (min-width: 768px){
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 30%;
+}
+}
+</style>
+{% endblock %}
+
 {% block content %}
  <br>
  <br>
@@ -8,15 +24,15 @@
         <div class="container">
   
           <div class="section-title">
-            <h2 data-aos="fade-in">Services</h2>
-            <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <h2 data-aos="fade-in">Workshops</h2>
+            
           </div>
   
           <div class="row">
             <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
               <div class="card">
                 <div class="card-img">
-                  <img src="{% static 'assets/img/main_website_image/services-1.jpg' %}" alt="...">
+                  <img src="{% static 'assets/img/main_website_image/workshop-poster/ansys-workshop.jpeg' %}" alt="...">
                 </div>
                 <div class="card-body">
                   <h5 class="card-title"><a href="">Temporibus laudantium</a></h5>
@@ -25,7 +41,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
+            <!-- <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
               <div class="card">
                 <div class="card-img">
                   <img src="{% static 'assets/img/main_website_image/services-2.jpg' %}" alt="...">
@@ -63,7 +79,7 @@
               </div>
             </div>
           </div>
-  
+   -->
         </div>
       </section>
 

@@ -674,6 +674,7 @@ body {
     
 
   }
+
   
   /*--------------------------------------------------------------
   # Services
@@ -1252,7 +1253,7 @@ body {
   #footer .footer-top {
     position: relative;
     z-index: 2;
-    text-align: center;
+    
     padding: 20px 0;
   }
 
@@ -1350,6 +1351,18 @@ body {
     text-align: center;
     font-size: 13px;
   }
+
+  .explore  {
+    width: 30%;
+}
+
+.contact{
+  width: 30%;
+}
+.quick-links{
+  width:30%;
+}
+
   @media (max-width: 768px) {
     #footer .copyright, #footer .credits {
       padding: 5px;

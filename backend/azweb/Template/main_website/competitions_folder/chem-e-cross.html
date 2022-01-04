@@ -344,12 +344,22 @@
 
 <div class="section-title heading ">
     <h2 data-aos="fade-in">Chem-E-Cross</h2>
+    <h3>Prizes Worth <span class="count">20000</span><span></span> </h3>
+    
 </div>
+
+
+
+
+
+
+    
+    
 
 
 <div class="row content">
     <div class="col-md-5" data-aos="fade-right">
-        <img src="{% static 'assets/img/main_website_image/chem-e-cross-2.jpeg' %}" class="img-fluid" alt="">
+        <img src="{% static 'assets/img/main_website_image/competition-poster/chem-e-cross-2.jpeg' %}" class="img-fluid" alt="">
     </div>
     <!-- <div class="col-md-7 pt-5" data-aos="fade-left">
          <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3> 
@@ -371,8 +381,8 @@
         <div id="tab1" class="panel">
         <h3>About</h3>
         <p>Every one of us might have solved a crossword in a newspaper or on the back of a book when we got bored. This time, we introduce a crossword filled with the fuzzy reactors and shiny catalyst over it, which reacts with multiple reactants to give a final product crossword puzzler.</p>
-        <a href="/area-prices-dam/" class="secondary-btn" style="display: inline-block;margin-top: 15px;">Problem Statement</a>
-        <a href="/area-prices-dam/" class="secondary-btn" style="display: inline-block;margin-top: 15px;">Portal Link</a>
+        <a href="https://drive.google.com/file/d/1E3Yql6qtL1UdwJ020dgGqLHM2GWhIZZE/view?usp=sharing" class="secondary-btn" style="display: inline-block;margin-top: 15px;">Problem Statement</a>
+        <a href="/chem_e_cross" class="secondary-btn" style="display: inline-block;margin-top: 15px;">Portal Link</a>
         </div>
         
         
@@ -385,10 +395,10 @@
             <li><i class="bi bi-check"></i> Undergraduate college students from any engineering background can
                 participate in this competition.</li>
             <li><i class="bi bi-check"></i> The crossword portal link will be shared on the contest day through our
-                social media handles, listed below. o Facebook: 
+                social media handles, listed below.   
                 <ul>
-                    <li><a href="https://www.facebook.com/AZeotropy">https://www.facebook.com/AZeotropy</a></li>
-                    <li><a href="https://www.instagram.com/iitbombay_azeotropy/">https://www.instagram.com/iitbombay_azeotropy/</a></li>
+                    <li>Facebook  : <a href="https://www.facebook.com/AZeotropy">https://www.facebook.com/AZeotropy</a></li>
+                    <li>Instagram : <a href="https://www.instagram.com/iitbombay_azeotropy/">https://www.instagram.com/iitbombay_azeotropy/</a></li>
                 </ul>
             </li>
             <!-- <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
@@ -436,8 +446,21 @@
 
 {% block script %}
 
-<script>
 
+<script>$('.count').each(function () {
+    $(this).prop('Counter', 0).animate({
+      Counter: $(this).text()
+    }, {
+      duration: 5000,
+      easing: 'swing',
+      step: function (now) {
+        $(this).text(Math.ceil(now));
+      }
+    });
+  });
+  </script>
+    
+<script>
 $('.floatbox-card .floatbox-tabs').on('click', '.tab',function(e){
     //alert ($(this).attr('data-tab-id'));
     if ($(this).hasClass('.active')) {
@@ -456,3 +479,4 @@ $(this).closest('.floatbox').find('.floatbox-nav').slideToggle();
 </script>
 
 {% endblock %}
+
