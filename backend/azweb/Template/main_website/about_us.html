@@ -69,6 +69,20 @@
 
     }
 
+    .secondary-btn {
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: 1px solid #5BBC2E;
+      background: #5BBC2E;
+      color: #fff;
+      transition: all 300ms ease 0ms;
+      cursor: pointer;
+  }
+  .secondary-btn:hover, .secondary-btn:focus {
+      background: #29b372;
+      border-color: #29b372;
+  }
+
    /* why-us */
 
    .why-us {
@@ -190,13 +204,14 @@
 
     <div class="row content">
       <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
-        <img src="{% static 'assets/img/main_website_image/features-4.svg' %}" class="img-fluid" alt="">
+        <img src="{% static 'assets/img/main_website_image/ca-portal2.jpg' %}" class="img-fluid" alt="">
       </div>
       <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
         <h3>Campus Ambassador</h3>
         <p class="fst-italic">
           Through our CAMPUS AMBASSADOR PROGRAM, AZeotropy allows you to demonstrate your leadership and organisational abilities. Campus Ambassadors are AZeotropy's representatives in their respective colleges, and their job is to connect with students who are interested in participating in AZeotropy's different events, competitions, and workshops. Students from all colleges with chemical, petrochemical, or petroleum engineering programmes are encouraged to register.
         </p>
+        <a href="/ca" class="secondary-btn" style="display: inline-block;margin-top: 15px;">Visit CA Portal</a>
         <!-- <p>
           Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
           velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in

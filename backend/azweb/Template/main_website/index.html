@@ -6,7 +6,112 @@
 
 {% block css %}
   <style>
-    #header{
+
+
+    
+
+
+
+    .banner-stories__item-wrapper .slick-dots li {
+      cursor: pointer;
+      display: inline-block;
+      height: 15px;
+      margin: 0 8px;
+      position: relative;
+      width: 15px;
+    }
+       
+    .banner-stories__item-wrapper .slick-dots li:last-child {
+      margin-right: 0;
+    }
+       
+    .banner-stories__item-wrapper .slick-dots li.slick-active button, 
+    .banner-stories__item-wrapper .slick-dots li button:hover {
+      background: white;
+    }
+       
+    .banner-stories__item-wrapper .slick-dots li button {
+      background: rgba(255, 255, 255, .5);
+      border: 0;
+      border-radius: 50%;
+      cursor: pointer;
+      display: block;
+      font-size: 0;
+      height: 20px;
+      padding: 0;
+      -o-transition: all 0.4s cubic-bezier(.55, .085, .68, .53);
+      -webkit-transition: all 0.4s cubic-bezier(.55, .085, .68, .53);
+      transition: all 0.4s cubic-bezier(.55, .085, .68, .53);
+      width: 20px;
+    }
+      
+    .banner-stories {
+      background: linear-gradient(90deg, rgba(92, 33, 97, 1) 0%, rgba(166, 31, 86, 1) 100%);
+      padding-bottom: 5%;
+      padding-top: 5%;
+      text-align: center;
+    }
+      
+    .banner-stories h2{
+      color: white;
+      font-size: 2.2rem;
+    }
+    
+    .banner-stories__item {
+      background: white;
+      box-shadow: 0 2px 10px rgb(0 0 0 /20%);
+      margin: .5% .5% 1% .5%;
+      opacity: .4;
+      -o-transition: all 0.4s cubic-bezier(.55, .085, .68, .53);
+      -webkit-transition: all 0.4s cubic-bezier(.55, .085, .68, .53);
+      transition: all 0.4s cubic-bezier(.55, .085, .68, .53);
+    }
+       
+    .banner-stories__item .card {
+      border: 0;
+      border-radius: 0;
+    }
+       
+    .banner-stories__item .card-body {
+      height: 100%;
+      padding: 6%;
+    }
+       
+    .banner-stories__item .card-body p{
+      font-size:1.2rem;
+      line-height:1.6rem;
+      padding-bottom:2%;
+    }
+    
+    .banner-stories__item .card-body h4{
+      font-size:1.7rem;
+    }
+    
+    .banner-stories__item img {
+      border-radius:50%;
+      display: block;
+      margin: 0 auto;
+      padding-top:2%;
+      width: 25%;
+    }
+       
+    .banner-stories__item-wrapper .banner-stories__item.slick-current {
+      opacity: 1 !important;
+    }
+       
+    .banner-stories__item-wrapper .slick-dots {
+      bottom: 0;
+      left: 0;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      z-index: 5;
+    }
+
+   #header{
        opacity: 100%;
       }
 
@@ -28,6 +133,10 @@
   .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
     
     font-weight: bolder;
+}
+
+#about video{
+  width:50%;
 }
 
 .about{
@@ -154,6 +263,17 @@ align-items: left;
 width: 100%;
 height: 100%;}
 
+.col-lg-2 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.clients .client-logo img {
+  width: 20%;
+ height: auto;
+}
+
+
 @media (max-width: 991px) {
   .navbar-mobile a, .navbar-mobile a:focus {
     padding: 10px 20px;
@@ -174,8 +294,49 @@ height: 100%;}
   right: 10%;
 }
 
+#about{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
 }
+
+#about video{
+  width: 90%;
+  margin: 0 5%;
+}
+
+.about2{
+  padding-top: 10px;
+  margin: 5px;
+  width: 100%;
+}
+
+#videoDiv {
+  height: auto;
+  position: relative;
+  margin-top: 20.5%;
+}
+
+
+}
+
+
+
+/* carousel style*/
+.flip-card-front{
+  padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flip-card-front img{
+  width: 10%;
+    border-radius: 2%;
+    margin-bottom: 15px;
+}
+/* carousel end */
 
   </style>
 
@@ -230,17 +391,17 @@ height: 100%;}
 
           <div class="col-lg-2 col-md-4 col-6">
             <div class="client-logo">
-              <img src="{% static 'assets/img/main_website_image/clients/client-1.png' %}" class="img-fluid" alt="" data-aos="flip-right">
+              <img src="{% static 'assets/img/main_website_image/clients/reliance.png' %}" class="img-fluid" alt="" data-aos="flip-right">
             </div>
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
             <div class="client-logo">
-              <img src="{% static 'assets/img/main_website_image/clients/client-2.png' %}" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="100">
+              <img src="{% static 'assets/img/main_website_image/clients/jaychemical-logo.png' %}" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="100">
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-4 col-6">
+          <!-- <div class="col-lg-2 col-md-4 col-6">
             <div class="client-logo">
               <img src="{% static 'assets/img/main_website_image/clients/client-3.png' %}" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="200">
             </div>
@@ -262,7 +423,7 @@ height: 100%;}
             <div class="client-logo">
               <img src="{% static 'assets/img/main_website_image/clients/client-6.png' %}" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="500">
             </div>
-          </div>
+          </div> -->
 
         </div>
 
@@ -271,7 +432,7 @@ height: 100%;}
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about section-bg black">
-      <video  width="50%"   preload="" autoplay="" muted="" playsinline="" loop=""> <source src="{% static 'assets/img/azeo_2021.mp4' %}" type="video/mp4"></video>
+      <video     preload="" autoplay="" muted="" playsinline="" loop=""> <source src="{% static 'assets/img/azeo_2021.mp4' %}" type="video/mp4"></video>
           
       <div class="container about1 ">
           
@@ -320,12 +481,91 @@ height: 100%;}
       <div class="container ">
 
         <div class="section-title">
-          <h2 data-aos="fade-in">Features</h2>
-          <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2 data-aos="fade-in">Past Events</h2>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-interval="false" data-bs-ride="carousel">   
+          <div class="carousel_container">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="{% static 'assets/img/main_website_image/past_events/harsha.jpg' %}" alt="">
+                      <h3>Harsha Bhogle</h3>
+                      <!-- <h4>Rank 1</h4>
+                     <p>Dwarkadas J.Sanghvi College Of Eng. Mumbai</p> -->
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+
+                
+
+              <div class="carousel-item">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="{% static 'assets/img/main_website_image/past_events/harsha.jpg' %}" alt="">
+                      <h3>Harsha Bhogle</h3>
+                      <!-- <h4>Rank 2</h4>
+                      <p>K. K. Wagh College Of Engineering Education And Research, Nashik</p> -->
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+                
+
+              <div class="carousel-item" >
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="{% static 'assets/img/main_website_image/past_events/harsha.jpg' %}" alt="">
+                      <h3>Harsha Bhogle</h3>
+                      <!-- <h4>Rank 3</h4>
+                     <p>NIT Allahabad</p> -->
+                    </div>
+                    
+                  </div>
+                </div>
+
+              </div>
+
+              
+
+            </div>
+
+            
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
 
         
-        <div class="row content">
+          <!--/.banner-stories --> 
+        </div>		
+        <!--/.container-fluid -->
+
+        <!-- <div class="row content">
           <div class="col-md-5" data-aos="fade-right">
             <img src="{% static 'assets/img/main_website_image/features-3.svg' %}" class="img-fluid" alt="">
           </div>
@@ -356,9 +596,10 @@ height: 100%;}
               culpa qui officia deserunt mollit anim id est laborum
             </p>
           </div>
-        </div>
+        </div> -->
 
-      </div>
+      
+        
     </section><!-- End Features Section -->
 
     <!-- ======= Portfolio Section ======= -->
@@ -385,9 +626,8 @@ height: 100%;}
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <h4>Events</h4>
-              <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
+              <img src="{% static 'assets/img/main_website_image/events-poster/higher-education-avenues.jpeg' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="{% static 'assets/img/main_website_image/portfolio/portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
                 <a href="events" title="More Details"><i class="bi bi-link"></i></a>
               </div>
               <div class="portfolio-info">
@@ -429,9 +669,8 @@ height: 100%;}
             <a href="competitions" title="More Details"></a>
             <div class="portfolio-wrap">
               <h4>Competitions</h4>
-              <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+              <img src="{% static 'assets/img/main_website_image/competition-poster/chem-e-cross-2.jpeg' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="{% static 'assets/img/main_website_image/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
                 <a href="competitions" title="More Details"><i class="bi bi-link"></i></a>
               </div>
               <div class="portfolio-info">
@@ -487,9 +726,9 @@ height: 100%;}
             <div class="portfolio-wrap">
               <h4>Workshops</h4>
 
-              <img src="{% static 'assets/img/main_website_image/portfolio/portfolio-8.jpg' %}" class="img-fluid" alt="">
+              <img src="{% static 'assets/img/main_website_image/workshop-poster/ansys-workshop.jpeg' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="{% static 'assets/img/main_website_image/portfolio/portfolio-8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bi bi-plus"></i></a>
+                
                 <a href="workshop" title="More Details"><i class="bi bi-link"></i></a>
               </div>
               <div class="portfolio-info">
@@ -645,6 +884,10 @@ height: 100%;}
     <!-- End Contact Section -->
 
   </main><!-- End #main -->
+
+  {% endblock %}
+
+  {% block script %}
 
   {% endblock %}
 
