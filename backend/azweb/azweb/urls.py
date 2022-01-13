@@ -21,7 +21,7 @@ from azweb import settings
 from django.conf.urls import url
 
 urlpatterns = [
-    path('ca/',include('registration_ca.urls')),
+    path('',include('registration_ca.urls')),
     path('chem_e_cross',include('chem_e_cross.urls')),
     path('admin/', admin.site.urls),
 
